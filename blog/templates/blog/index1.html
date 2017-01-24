@@ -1,0 +1,878 @@
+<!doctype html>
+<html lang="en">
+<head>
+  {% load staticfiles %}
+  <meta charset="utf-8" />
+  <link rel="icon" type="image/png" href="{% static 'blog/assets/img/favicon.ico">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  
+  <title>Atomic Labs</title>
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+    
+    <link href="{% static 'blog/assets/css/bootstrap.css' %}" rel="stylesheet" />
+    <link href="{% static 'blog/assets/css/rubick.css' %}" rel="stylesheet"/>    
+    
+    <!--     Fonts and icons     -->
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css' %}" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700' rel='stylesheet' type='text/css'>
+    <link href="{% static 'blog/assets/css/fonts/pe-icon-7-stroke.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/assets/css/fonts/Rubik-Fonts.css' %}" rel="stylesheet" />
+</head>
+
+<body id="skrollr-body">
+<!--<div class="loading ">
+  <div class="loading-container">
+    <p>Just a sec...</p>
+    <img class="loader" src="{% static 'blog/assets/img/rubik.svg' %}"/>
+  </div>
+</div>-->
+<nav class="navbar navbar-default navbar-transparent navbar-fixed-top navbar-burger" role="navigation">
+    <!-- if you want to keep the navbar hidden you can add this class to the navbar "navbar-burger"-->
+    
+    <div class="container">
+    <div class="navbar-header">
+        <button id="menu-toggle" type="button" class="navbar-toggle" data-toggle="collapse" data-target="#example">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar bar1"></span>
+            <span class="icon-bar bar2"></span>
+            <span class="icon-bar bar3"></span>
+        </button>
+        <a href="" class="navbar-brand">
+           ATOMIC LABS
+        </a>
+    </div>
+
+    <div class="collapse navbar-collapse" id="navbar-1" >
+      <ul class="nav navbar-nav navbar-right navbar-uppercase">
+            <li class="social-links">
+                <a href="#"> 
+                    <i class="fa fa-facebook"></i>
+                </a>
+                <a href="#"> 
+                    <i class="fa fa-twitter"></i>
+                </a>
+                <a href="#"> 
+                    <i class="fa fa-instagram"></i>
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#whoWeAre"> 
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#workflow"> 
+                    Workflow
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#projects"> 
+                    Features
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#clients"> 
+                    Clients
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#numbers"> 
+                    Numbers
+                </a>
+            </li>
+            <li>
+                <a href="" data-scroll="true" data-id="#contact"> 
+                    Contact
+                </a>
+            </li>
+       </ul>
+    </div><!-- /.navbar-collapse -->
+  </div>
+</nav>
+
+  
+<div class="wrapper">
+    <div class="section section-header">
+        <div class="parallax" style="background-color: #00b4ff; background-image: url(/images/noise.png),linear-gradient(138deg, #3c3c74 0, #00b4ff 120%); background-repeat: repeat,no-repeat; background-size: 120px 120px,100% 100%; background-attachment: fixed; color:white;"> 
+            
+
+            <div class="container">
+                <div class="content">
+                    <!--<p><span>by </span>Creative Tim<p>-->
+                    <h1>Atomic</h1>
+                    <div class="separator-container">
+                      <div class="separator line-separator">♫</div>
+                    </div>
+                    <h5>The best talent for digital projects, on demand</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section "What We do" example 4: Big Title & 4 columns icons -->
+    <div class="section section-we-do-2" id="whoWeAre" style="margin-top:10%">
+        <div class="container">
+            <div class="row">
+                <div class="title add-animation-stopped">
+                    <!--<h5 class="text-gray">Solving your digital needs</h5>-->
+                    <h2>Find Talent on Demand</h2>
+                    <div class="separator-container">
+                        <br>
+                    </div>
+                    <p>
+
+                    <!--Whatever your needs, we are here to find the right talent for your digital project. Just let us know what kind of help you need and we'll get you the best professionals.-->
+
+                    The best companies win with the best talent. But great people can be hard to find. We connect you with top freelance experts to help you fuel your success.
+
+                    <!--Say goodbye to business as usual.-->
+
+                    </p>
+                </div>
+                <div class="col-md-3">
+                    <div class="card add-animation-stopped animation-1">
+                        <i class="fa fa-code fa-5x" style="color:#00b4ff; display:inline"></i>
+                        <h3>Web Development</h3>
+                        <!--<p>We love making the web a better place and we love good reasons for adding to it.</p>-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card add-animation-stopped animation-2">
+                        <i class="fa fa-mobile fa-5x" style="color:#00b4ff; display:inline"></i>
+                        <h3>Mobile Development</h3>
+                        <!--<p>We're a digital agency with our roots in graphic design.</p>-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card add-animation-stopped animation-3">
+                        <i class="fa fa-vcard-o fa-5x" style="color:#00b4ff; display:inline"></i>
+                        <h3>UI/UX</h3>
+                        <!--<p>We love making the web a better place and we love good reasons for adding to it.</p>-->
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card add-animation-stopped animation-4">
+                        <i class="fa fa-paint-brush fa-5x" style="color:#00b4ff; display:inline"></i>
+                        <h3>Design</h3>
+                        <!--<p>We love to create awesome products and we do everything to make them outstanding.</p>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section "What We do" example 3: Small Title & 3 columns icons -->
+    <div class="section section-we-are-2" style="margin-top:3%">
+      <div class="text-area">
+          <div class="container">
+              <div class="row">
+                  <div class="col-md-4">
+                      <div class="title add-animation-stopped">
+                          <!--<h5 class="text-gray">2 Columns Text</h5>-->
+                          <h1>A+ Players</h1>
+                      </div>
+                  </div>
+                  <div class="col-md-7 col-md-offset-1">
+                      <div class="description add-animation-stopped animation-1">
+                          <p>Our professional network selection process is extensive, and we’ve taken great care to hand-pick only the very best talent. </p>
+                          <p>Over the past two years, we’ve formed a compact, close-knit team of highly effective A+ players, each with expansive knowledge of his/her realm, and unparalleled attention to detail.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <!--<div class="container">
+          <div class="row">
+              <div class="col-md-10 col-md-offset-1">
+                  <div class="row">
+                      <div class="col-md-4">
+                          <div class="card add-animation-stopped animation-1">
+                              <img alt="..." src="{% static 'blog/assets/img/builder/projects/project.jpg' %}" />
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card add-animation-stopped animation-2">
+                              <img alt="..." src="{% static 'blog/assets/img/builder/projects/project.jpg' %}"/>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="card add-animation-stopped animation-3">
+                              <img alt="..." src="{% static 'blog/assets/img/builder/projects/project.jpg' %}"/>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>-->
+  </div>
+
+   <div class="section section-we-do-2" id="whoWeAre" style="margin-top:0%">
+        <div class="container">
+            <div class="row text-center">
+                <div class="title add-animation-stopped">
+                    <!--<h5 class="text-gray">Solving your digital needs</h5>-->
+                    <h2>We speak may languages</h2>
+                    <div class="separator-container">
+                        <br>
+                    </div>
+                    <p>
+
+                    <!--Whatever your needs, we are here to find the right talent for your digital project. Just let us know what kind of help you need and we'll get you the best professionals.-->
+
+                    Python, Ruby, Javascript? You name it! We have the right professional to help drive your busines no matter what technology you need. 
+
+                    <!--Say goodbye to business as usual.-->
+
+                    </p>
+                </div>
+                <div class="col-md-2">
+                    <img style="width:50%" src="{% static 'blog/assets/img/logos/languages/python.svg'%}">
+                </div>
+                <div class="col-md-2">
+                    <img style="width:50%" src="{% static 'blog/assets/img/logos/languages/javascript.svg'%}">
+                </div>
+                <div class="col-md-2">
+                    <img style="width:50%" src="{% static 'blog/assets/img/logos/languages/ruby.svg'%}">
+                </div>
+                <div class="col-md-2">
+                    <img style="width:40%" src="{% static 'blog/assets/img/logos/languages/gopher.svg'%}">
+                </div>
+                <div class="col-md-2">
+                    <img style="width:40%" src="{% static 'blog/assets/img/logos/languages/java.svg'%}">
+                </div>
+                <div class="col-md-2">
+                    <img style="width:50%" src="{% static 'blog/assets/img/logos/languages/swift.svg'%}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Section "What We do" example 3: Small Title & 3 columns icons -->
+    
+    <div class="section section-we-do-1" id="workflow">
+      <div class="text-area">
+        <div class="container">
+            <div class="row">
+              <div  class="title add-animation">  
+                   <h5 class="text-gray">Find out</h5>       
+                   <h2>How Atomic works</h2>
+                   <div class="separator-container">
+                        <div class="separator line-separator">♫</div>
+                    </div>
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-sm-6">
+                     <div class="card add-animation animation-1">
+                       <h5 class="text-gray">01.</h5>
+                       <h3>Tell us what you need</h3>
+                       <p>Tell us a bit about your project and what type of talent you’re looking for.</p>
+                   </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                     <div class="card add-animation animation-2">
+                       <h5 class="text-gray">02.</h5>
+                       <h3>Review the candidates</h3>
+                       <p>We will connect you with the top candidates for your project in no time</p>
+                   </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                   <div class="card add-animation animation-3">
+                       <h5 class="text-gray">03.</h5>
+                       <h3>Hire the right talent</h3>
+                       <p>Evaluate proposals, portfolios, and skillsets, then hire the best fit for your project.</p>
+                   </div>
+               </div>
+               <div class="col-md-3 col-sm-6">
+                     <div class="card add-animation animation-4">
+                       <h5 class="text-gray">04.</h5>
+                       <h3>Work and Create</h3>
+                       <p>Its show time... You own the communication and work style with the selected hire.</p>
+                   </div>
+               </div>
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section section-we-made-1 section-with-hover" id="projects">
+         <div class="text-area">
+            <div class="title add-animation">
+                <h5 class="text-gray">Play It!</h5>
+                <h2>Features</h2>
+                <div class="separator-container">
+                    <div class="separator line-separator">♫</div>
+                </div>
+            </div>
+         </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="project add-animation animation-1">
+                      <img src="{% static 'blog/assets/img/rubik_background2.jpg' %}"/>
+                      <a class="over-area " href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_1">
+                           <div class="content">
+                              <h4>Great sound changes everything.</h4>
+                              <p>Turn your daytrip into a disco, make your picnic a party, watch while you work, boogie on the beach, and bring crisp, clear sound wherever you go. Because great sound makes everything better.</p>
+                              <p>Click for more details...</p>
+                          </div>
+                      </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project add-animation animation-2">
+                      <img src="{% static 'blog/assets/img/rubik_background2.jpg' %}"/>
+                       <a class="over-area " href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_2">
+                           <div class="content">
+                              <h4 >The App.</h4>
+                              <p>Our app for iPhone and iPad.
+                              Made for you to hear more. More trending tracks. More of your favorite artists. More of the music & audio you love. The SoundCloud app lets you hear more of what you want to hear. Sounds good, doesn’t it?</p>
+                              <p>Click for more details...</p>
+                          </div>
+                      </a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project add-animation animation-1">
+                    <img src="{% static 'blog/assets/img/rubik_background2.jpg' %}">
+                    <a class="over-area " href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_3">
+                         <div class="content">
+                            <h4 >Your eyes won't believe your ears.</h4>
+                            <p>Eye catching style! No cords. No docks. No plugs. And it gets a whopping 15 hours of playback from a single charge, so you'll need a rest before it ever will.</p>
+                            <p>Click for more details...</p>
+                        </div>
+                    </a>
+                 </div>
+            </div>
+            <div class="col-md-6">
+                <div class="project add-animation animation-2">
+                    <img src="{% static 'blog/assets/img/rubik_background2.jpg' %}">
+                    <a class="over-area " href="javascript:void(0)" onClick="rubik.showModal(this)" data-target="project_4">
+                         <div class="content">
+                            <h4 >Go with the moment</h4>
+                            <p>Whatever you’re doing or feeling, we’ll find playlists to match your mood.</p>
+                            <p>Click for more details...</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+          </div>
+       </div>
+
+       <div class="section section-clients-1" id="clients">
+        <div class="container">
+            <div class="text-area">
+                <div class="title add-animation">
+                    <h5 class="text-gray">Our Clients &</h5>
+                    <h2>Our Friends</h2>
+                    <div class="separator-container">
+                        <div class="separator line-separator">♫</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row text-center">
+              <div class="col-sm-4">
+                <img style="width:40% "alt="..." src="{% static 'blog/assets/img/logos/companies/techstars.png' %}"/>
+              </div>
+              <div class="col-sm-4">
+                <img style="width:27% "alt="..." src="{% static 'blog/assets/img/logos/companies/zx-ventures.png' %}"/>
+              </div>
+              <div class="col-sm-4">
+                <img style="width:40% "alt="..." src="{% static 'blog/assets/img/logos/companies/budweiser.jpg' %}"/>
+              </div>
+            </div>
+            
+          <!--<div class="list-logos">  
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-1">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/beats.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/beats_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-2">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/samsung.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/samsung_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-3">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/vh1.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/vh1_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-1">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/vaio.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/vaio_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-2">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/soundcloud.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/soundcloud_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-3">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/skullcandy.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/skullcandy_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-1">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/pandora.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/pandora_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-2">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/spotify.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/spotify_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-3">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/lastfm.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/lastfm_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-1">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/apple.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/apple_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-2">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/sony.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/sony_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="logo add-animation animation-3">
+                        <a href="#"> 
+                        <img alt="..." src="{% static 'blog/assets/img/clients/lg.svg' %}"/>
+                        <img alt="..." src="{% static 'blog/assets/img/clients/lg_h.svg' %}"/>
+                        </a>
+                    </div>
+                </div>
+            </div>
+          </div>-->
+        </div>
+    </div>
+
+    <div class="section section-team-1">
+      <div class="container">         
+         <div class="text-area">
+            <div class="title add-animation">
+                <h5 class="quotes large">The best way to find great talent on demand at great hourly rates</h5>
+                <br>
+                <p>Michael Scissons, Founder @ Grid Ventures</p> 
+            </div>
+        </div>
+      </div>
+      <div class="static-image gradient-image add-animation animation-1">
+        <img src="{% static 'blog/assets/img/team/team1.jpg' %}"/>
+      </div>
+    </div>
+
+   <div class="section section-numbers-1" id="numbers">
+        <div class="container">
+             <div class="text-area">
+                <div class="title add-animation">
+                    <h5 class="text-gray">People lie</h5>
+                    <h2>Numbers don't</h2>
+                    <div class="separator-container">
+                      <div class="separator line-separator">♫</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="clearfix"></div>
+            <div class="row">
+               <div class="col-md-4 col-sm-4">
+                  <div class="card add-animation animation-1">
+                       <h3>Customers</h3>
+                       <h5 class="text-gray">Enterprises, small businesses and hipsters</h5>
+                       <div class="number" id="customersNo">
+                        50
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4 col-sm-4">
+                   <div class="card add-animation animation-2">
+                       <h3>Projects</h3>
+                       <h5 class="text-gray">Headphones, Jamboxes, Music Apps</h5>
+                       <div class="number" id="projectsNo">
+                        30
+                       </div>
+                   </div>
+               </div>
+               <div class="col-md-4 col-sm-4">
+                  <div class="card add-animation animation-3">
+                       <h3>Stores</h3>
+                       <h5 class="text-gray">Where you can find us or our stuff</h5>
+                       <div class="number" id="citiesNo">
+                           278
+                       </div>
+                   </div>
+               </div> 
+            </div>          
+        </div>
+    </div>
+
+    <div class="section section-contact-3" id="contact">
+        <div class="contact-container">
+            <div class="address-container add-animation animation-1">
+                <div class="address">
+                    <h4>Where to meet ?</h4>
+                    <p class="text-gray">
+                        175 Varick Street<br>
+                        10014<br>
+                        New York, NY<br>
+                    </p>
+                    <!--<h4>Phone</h4>
+                    <p class="text-gray">+1 347 882 5168</p>-->
+                    <h4>By the old way</h4>
+                    <a href="mailto:hello@atomiclabs.xyz">
+                        <p class="text-gray">hello@atomiclabs.xyz</p>
+                    </a>                           
+                </div>
+            </div>
+            <div  class="map">
+                <div id="contactUsMap" class="big-map"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer footer-big footer-color-white" id="footerTrigger">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3">
+                   <div class="info add-animation-stopped animation-1">
+                    <h5 class="title">Company</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Find offers
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Discover Projects
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Our Portfolio
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    About Us
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                  </div>
+                </div>
+                <div class="col-md-3 col-md-offset-1 col-sm-3">
+                   <div class="info add-animation-stopped animation-2">
+                    <h5 class="title"> Help and Support</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                   Contact Us
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   How it works
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Terms &amp; Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    Company Policy
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                   Money Back
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="info add-animation-stopped animation-3">
+                    <h5 class="title">Latest News</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">
+                                   <i class="fa fa-twitter"></i> <b>Get Shit Done</b>
+                                   The best kit in the market is here, just give it a try and let us...
+                                   <hr class="hr-small">
+                                </a>
+                            </li>
+                            <li>
+                                  <a href="#">
+                                   <i class="fa fa-twitter"></i>
+                                   We've just been featured on <b> Awwwards Website</b>! Thank you everybody for...
+                                </a>
+                            </li>
+                          
+                        </ul>
+                    </nav>
+                </div>
+              </div>
+                <div class="col-md-2 col-md-offset-1 col-sm-3">
+                    <div class="info add-animation-stopped animation-4">
+                    <h5 class="title">Follow us on</h5>
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#" class="btn btn-social btn-facebook btn-simple">
+                                    <i class="fa fa-facebook-square"></i> Facebook
+                                </a>
+                            </li>
+                             <li>
+                                 <a href="#" class="btn btn-social btn-dribbble btn-simple">
+                                    <i class="fa fa-dribbble"></i> Dribbble
+                                </a>
+                            </li>
+                            <li>
+                               <a href="#" class="btn btn-social btn-twitter btn-simple">
+                                    <i class="fa fa-twitter"></i> Twitter
+                                </a>
+                            </li>
+                            <li>
+                                 <a href="#" class="btn btn-social btn-reddit btn-simple">
+                                    <i class="fa fa-google-plus-square"></i> Google+
+                                </a>
+                            </li>
+                           
+                        </ul>
+                    </nav>
+                </div>
+                </div>
+            </div>
+            <hr>
+            <div class="copyright">
+                © 2017 Atomic Labs
+            </div>
+        </div>
+    </footer>
+</div> <!-- end wrapper -->
+
+<div class="project-content" id="project_1">
+  <div>
+    <div class="project-details">
+      <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+      <div class="container">
+        <div class="project-title">
+          <h5 >Find out how</h5>
+            <h2>Great sound makes everything better</h2>
+            <div class="separator-container">
+              <div class="separator line-separator">♫</div>
+            </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project-text text-right">
+                  <p>We love that you're trying new things. Designed for music lovers who don't sacrifice sound for style, our headphones deliver pure audio in an ultra-lightweight and durable package.</p>
+                  <p>A solid metallic housing, matched with the newest gold, silver and space gray edition colors, will be your phone’s perfect match. </p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-image">
+                  <img src="{% static 'blog/assets/img/rubik_background3.png' %}"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-text">
+                  <p>The tangle-free cable with built-in-mic will help you effortlessly switch between music and calls so that you can enjoy premium, uninterrupted sound.</p>
+                  <p>Each headphone is milled from a single, solid piece of material. Graphite brushed aluminum model shown.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="project-content" id="project_2">
+  <div>
+    <div class="project-details">
+      <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+      <div class="container">
+        <div class="project-title">
+          <h5 >The app</h5>
+            <h2>Hear the sound of the world</h2>
+            <div class="separator-container">
+              <div class="separator line-separator">♫</div>
+            </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project-text text-right">
+                  <p>More quick. More slick. One thumb is all you need.
+                  </p>
+                  <p>Tap to play and pause. Swipe to skip tracks. Slide the waveform to scrub. The app is beautifully simple to use. But your thumb won’t need to work too hard – it’s easier than ever to hear more of the world’s sounds.</p>
+                   <p> The tracks you’ve liked and discovered, and your favorite playlists can all be found in your Collection. Which means you can listen to what you love again and again. And again.</p>
+
+
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-image">
+                  <img src="{% static 'blog/assets/img/rubik_background3.png' %}"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-text">
+                  <p>More likes. More playlists. All in one place. </p>
+                  <p>More upfront. More personal. Straight from the source.</p>
+                  <p>The Profile screen organizes the tracks, playlists and likes of everyone on SoundCloud. Whether they’re posting original music or liking and reposting tracks. The important stuff can all be found right up front.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="project-content" id="project_3">
+  <div>
+    <div class="project-details">
+      <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+      <div class="container">
+        <div class="project-title">
+          <h5 >Watch out</h5>
+            <h2>Your eyes won't believe your ears.</h2>
+            <div class="separator-container">
+              <div class="separator line-separator">♫</div>
+            </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project-text text-right">
+                  <p>How do our speakers kick out huge, clear sound at any volume? </p>
+                  <p>Precision-tuned drivers, dual passive bass radiators, and multi-band compressors working in concert. Plus the unprecedented depth, detail, and realism of LiveAudio. That's how.</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+                <div class="project-image">
+                    <img src="{% static 'blog/assets/img/rubik_background3.png' %}"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-text">
+                  <p>Room-to-room, or coast-to-coast.</p>
+                  <p>Our speaker gives you sound big enough to fill any space, in a size small enough to carry around the house or take on your next trip.</p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="project-content" id="project_4">
+  <div>
+    <div class="project-details">
+      <span class="icon-close"><i class="pe-7s-close-circle"></i></span>
+      <div class="container">
+        <div class="project-title">
+          <h5 >Learn how to</h5>
+            <h2>Go with the moment</h2>
+            <div class="separator-container">
+              <div class="separator line-separator">♫</div>
+            </div>
+        </div>
+        <div class="product">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="project-text text-right">
+                  <p>Glam out. Premium sound and flawless style come together for the Play It headphones. Elevate your listening experience with this luxe collection of wireless products.</p>
+                  <p>If you're listening on your headphones, silence the noise from your daily commute or the drama from your loud neighbors with our no-compromise dual-mode Adaptive Noise Canceling (ANC).</p>
+                 
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-image">
+                  <img src="{% static 'blog/assets/img/rubik_background3.png' %}"/>
+                </div>
+            </div>
+            <div class="col-md-4">
+              <div class="project-text">
+                  <p>Our Acoustic Engine in the headphones gives you an intimate, real encounter with your music. </p>
+                  <p>Take calls, skip songs, and change the volume right from the headphone. Or use the headphones's built-in speakerphone.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+  <!--   core js files    -->
+  <script src="{% static 'blog/assets/js/jquery-1.11.2.min.js' %}" type="text/javascript"></script>
+  <script src="{% static 'blog/assets/js/bootstrap.js' %}" type="text/javascript"></script>
+  
+  <!--   file for adding vertical points where we activate the elements animation   -->
+  <script type="text/javascript" src="{% static 'blog/assets/js/jquery.waypoints.min.js' %}"></script>
+
+  <!--  js library for devices recognition -->
+  <script type="text/javascript" src="{% static 'blog/assets/js/modernizr.js' %}"></script>
+
+  <!--   file where we handle all the script from the Rubik page   -->
+  <script type="text/javascript" src="{% static 'blog/assets/js/rubick.js' %}"></script>
+  
+  <!--  script for google maps   -->
+  <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false"></script>
+    
+</html>
