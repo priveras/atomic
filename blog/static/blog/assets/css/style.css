@@ -14,6 +14,18 @@ h3 {
 	line-height: 35px;
 }
 
+.w-full {
+	width: 100%;
+}
+
+.w-50 {
+	width: 50%;
+}
+
+.main-color {
+	color: #e84c3d
+}
+
 .m-t{
 	margin-top: 30px;
 }
@@ -77,8 +89,18 @@ h3 {
 	color: rgba(255, 255, 255, 1);
 }
 
+.subheader-text {
+	
+	font-weight: 300;
+	color: #777777;
+	letter-spacing: -1px;
+}
 
+.header-text {
+	text-transform: uppercase;	
+}
 
-
-
+.footer{
+	color: #777777
+}
 
