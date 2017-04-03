@@ -51,23 +51,23 @@
 
 <div class="stage-shelf stage-shelf-right hidden" id="sidebar">
   <ul class="nav nav-bordered nav-stacked flex-column">
-    <li class="nav-header">Examples</li>
+    <li class="nav-header">Main</li>
     <li class="nav-item">
-      <a class="nav-link active" href="index.html">Startup</a>
+      <a class="nav-link active" href="index.html">Talent</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="minimal/index.html">Minimal</a>
+      <a class="nav-link" href="minimal/index.html">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="bold/index.html">Bold</a>
+      <a class="nav-link" href="bold/index.html">FAQ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bold/index.html">Careers</a>
     </li>
     <li class="nav-divider"></li>
-    <li class="nav-header">Docs</li>
+    <li class="nav-header">Extras</li>
     <li class="nav-item">
-      <a class="nav-link" href="docs/index.html">Toolkit</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="http://getbootstrap.com">Bootstrap</a>
+      <a class="nav-link" href="docs/index.html">Contact</a>
     </li>
   </ul>
 </div>
@@ -75,7 +75,7 @@
 <div class="stage" id="stage">
 
 <div class="block block-inverse block-fill-height app-header"
-     style="background-image: url({% static 'blog/assets/img/startup-1.jpg' %});">
+     style="background-image: url({% static 'blog/assets/img/bg1.jpg' %});">
 
   <div class="container py-4 fixed-top app-navbar">
   <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">
@@ -89,7 +89,8 @@
     </button>
 
     <a class="navbar-brand mr-auto" href="">
-      <strong style="background: #fff; padding: 12px; border-radius: 4px; color: #28669F;">go</strong>
+      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      Atomic Labs
     </a>
 
     <div class="hidden-sm-down text-uppercase">
@@ -119,8 +120,8 @@
       <div class="row">
         <div class="col-sm-10 col-lg-6">
           <h1 class="block-titleData frequency">Talent on demand.</h1>
-          <p class="lead mb-4 text-muted">The best companies win with the best talent. But great people can be hard to find. We connect you with top freelance experts to help you fuel your success.</p>
-          <button class="btn btn-primary btn-lg">Start a project</button>
+          <p class="lead mb-4 text-muted">The best companies win with the best talent, but great people can be hard to find. We connect you with top freelance experts to help you fuel your success.</p>
+          <button class="btn btn-primary btn-lg">I want to hire</button>
         </div>
       </div>
     </div>
@@ -166,7 +167,7 @@
             </div>
             <h3>Web Development</h3>
             <p>
-              Can someone recommend a great digital marketing agency?
+              There's someone ready to cover anything from simple websites to complicated backends.
             </p>
           </li>
 
@@ -176,7 +177,7 @@
             </div>
             <h3>Mobile Development</h3>
             <p>
-              What legal restricions should we know about beer delivery?
+              iOS, Android or any other. You name it, we've got you covered.
             </p>
           </li>
           <li>
@@ -185,7 +186,7 @@
             </div>
             <h3>UI/UX and Design</h3>
             <p>
-              How much should we offer a senior sotware engineer to join our team?
+              Whatever your design needs, we have someone who can help you.
             </p>
           </li>
         </ul>
@@ -204,12 +205,12 @@
 </div>
 
 <div class="block block-inverse app-high-praise"
-     style="background-image: url({% static 'blog/assets/img/startup-3.jpg' %});">
+     style="background-image: url({% static 'blog/assets/img/bg2.jpg' %});">
     <div class="container">
       <div class="row app-align-center py-3">
         <div class="col-sm-5 push-sm-7 py-5">
           <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
-          <h3 class="mb-4">“Go Analytics is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h3>
+          <h3 class="mb-4">“Atomic Labs is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h3>
           <p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>
         </div>
       </div>
@@ -242,11 +243,11 @@
         <p><strong>Great Prices.</strong> The most competitive prices for software development and design.</p>
       </div>
       <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="{% static 'blog/assets/img/startup-11.svg' %}">
+        <img style="width:193px" class="mb-1" src="{% static 'blog/assets/img/startup-11.png' %}">
         <p><strong>On Demand.</strong> Start working in a matter of days not weeks.</p>
       </div>
       <div class="col-md-4 px-4 mb-5">
-        <img class="mb-1" src="{% static 'blog/assets/img/startup-9.svg' %}">
+        <img style="width:193px" class="mb-1" src="{% static 'blog/assets/img/startup-9.png' %}">
         <p><strong>24/7 support.</strong> We’re always here for you no matter what time of day.</p>
       </div>
     </div>
@@ -273,13 +274,18 @@
 
     <div class="row mb-5">
       <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
-        <h6 class="text-muted text-uppercase mb-2">Business Talk</h6>
-        <h3>No plans. We just bump your plan whenever you need it.</h3>
+        <h6 class="text-muted text-uppercase mb-2">Atomic Labs</h6>
+        <h3>On demand A+ players to help you develop your projects</h3>
       </div>
     </div>
+    <!--<div class="row mb-5">
+      <div class="col-sm-2 offset-sm-5">
+        <img src="{% static 'blog/assets/img/physics.svg' %}">
+      </div>
+    </div>-->
 
     <div class="row">
-      <div class="col-md-4 px-4 pb-2 mb-5">
+      <!--<div class="col-md-4 px-4 pb-2 mb-5">
         <div class="px-2 mb-2">
           <h6 class="text-muted text-uppercase mb-4">Personal</h6>
           <img class="mb-4" src="{% static 'blog/assets/img/startup-15.svg' %}">
@@ -293,12 +299,12 @@
         </ul>
 
         <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="hidden-lg-down">a personal account</span>
+          I want to hire</span>
         </button>
-      </div>
+      </div>-->
 
-      <div class="col-md-4 px-4 pb-2 mb-5">
-        <div class="px-2">
+      <div class="offset-md-4 col-md-4 px-4 pb-2 mb-5">
+        <!--<div class="px-2">
           <h6 class="text-muted text-uppercase mb-4">Business</h6>
           <img class="mb-4" src="{% static 'blog/assets/img/startup-16.svg' %}">
           <p class="pb-2">The perfect sized plan for small businesses to get started.</p>
@@ -308,14 +314,14 @@
           <li class="py-4"><strong>100k</strong> monthly requests</li>
           <li class="py-4"><strong>24/7</strong> technical supprt</li>
           <li class="py-4"><strong>Public</strong> API access</li>
-        </ul>
+        </ul>-->
 
         <button class="btn btn-lg btn-primary btn-block">
-          Start <span class="hidden-lg-down">a business account</span>
+          Hire now
         </button>
       </div>
 
-      <div class="col-md-4 px-4 pb-1 mb-5">
+      <!--<div class="col-md-4 px-4 pb-1 mb-5">
         <div class="px-2">
           <h6 class="text-muted text-uppercase mb-4">Corporate</h6>
           <img class="mb-4" src="{% static 'blog/assets/img/startup-17.svg' %}">
@@ -331,7 +337,7 @@
         <button class="btn btn-lg btn-primary btn-block">
           Start <span class="hidden-lg-down">a corporate account</span>
         </button>
-      </div>
+      </div>-->
     </div>
 
   </div>
