@@ -50,7 +50,7 @@
         <div class="col-sm-10 col-lg-6">
           <h1 class="block-titleData frequency">Talent on demand.</h1>
           <p class="lead mb-4 text-muted">The best companies win with the best talent, but great people can be hard to find. We connect you with top freelance experts to help you fuel your success.</p>
-          <button class="btn btn-primary btn-lg">I want to hire</button>
+          <a href="{% url 'blog:hire' %}" class="btn btn-primary btn-lg">I want to hire</a>
         </div>
       </div>
     </div>
@@ -139,8 +139,8 @@
       <div class="row app-align-center py-3">
         <div class="col-sm-5 push-sm-7 py-5">
           <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
-          <h3 class="mb-4">“Atomic Labs is amazing. Decisions that used to take weeks, now only takes minutes and is available to everyone on my team.”</h3>
-          <p class="mb-4 text-muted">Cindy Smith, founder of Cool Startup</p>
+          <h3 class="mb-4">“Atomic Labs makes the process of Hiring the best people easier than ever”</h3>
+          <p class="mb-4 text-muted">Pamela Valdes, founder of Beek.io</p>
         </div>
       </div>
   </div>
@@ -245,9 +245,9 @@
           <li class="py-4"><strong>Public</strong> API access</li>
         </ul>-->
 
-        <button class="btn btn-lg btn-primary btn-block">
+        <a href="{% url 'blog:hire' %}" class="btn btn-lg btn-primary btn-block">
           Hire now
-        </button>
+        </a>
       </div>
 
       <!--<div class="col-md-4 px-4 pb-1 mb-5">

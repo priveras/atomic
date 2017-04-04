@@ -17,7 +17,7 @@
       <span class="navbar-toggler-icon"></span>
     </button>
 
-    <a class="navbar-brand mr-auto" href="">
+    <a class="navbar-brand mr-auto" href="{% url 'blog:index' %}">
       <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
       Atomic Labs
     </a>
@@ -45,16 +45,16 @@
 
 <div class="block text-center">
   <div class="container-fluid">
-    <h4 class="mb-4">
-      Join over 900,000 designers already using Bootstrap. Get Bootstrap <strong>free</strong> forever!
+    <h4 class="mb-4 mt-4">
+      Get accesso to our talent pool of developers, engineers and designers!
     </h4>
     <form class="form-inline d-flex justify-content-center">
       <input class="form-control mb-3" placeholder="email address">
       <input class="form-control mb-3 mx-1" type="password" placeholder="Create a Password">
-      <button class="btn btn-primary mb-3">Get started - free forever</button>
+      <button class="btn btn-primary mb-3">Get started</button>
     </form>
     <small class="text-muted">
-      By clicking "get started – free Forever!" I agree to Bootstraps
+      By clicking "get started" I agree to the
       <a href="#">Terms of service</a>
     </small>
   </div>
