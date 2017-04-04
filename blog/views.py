@@ -11,6 +11,9 @@ class IndexView(generic.TemplateView):
 class AboutView(generic.TemplateView):
     template_name = "blog/about.html"
 
+class ThanksView(generic.TemplateView):
+    template_name = "blog/thanks.html"
+
 def hire(request):
     if request.method == 'GET':
         form = PostForm()
@@ -28,7 +31,7 @@ def hire(request):
                 created_at = timezone.now()
                 )
 
-            return HttpResponseRedirect('/members/')
+            return HttpResponseRedirect('/thanks/')
 
         else:
             print form.is_valid()   #form contains data and errors
