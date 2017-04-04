@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        Atomic Labs
+
+    </title>
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+      <link href="{% static 'blog/assets/css/toolkit-startup.css' %}" rel="stylesheet">
+      <link href="{% static 'blog/assets/css/application-startup.css' %}" rel="stylesheet">
+      <link href="{% static 'blog/assets/css/main.css' %}" rel="stylesheet">
+      
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+
+
+<body>
+
+<div class="stage-shelf stage-shelf-right hidden" id="sidebar">
+  <ul class="nav nav-bordered nav-stacked flex-column">
+    <li class="nav-header">Main</li>
+    <li class="nav-item">
+      <a class="nav-link active" href="index.html">Talent</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bold/index.html">FAQ</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="bold/index.html">Careers</a>
+    </li>
+    <li class="nav-divider"></li>
+    <li class="nav-header">Extras</li>
+    <li class="nav-item">
+      <a class="nav-link" href="docs/index.html">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<div class="stage" id="stage">
+
+{% block content %}
+{% endblock %}
+
+<div class="block block-inverse app-footer">
+ <div class="container">
+    <div class="row">
+      <div class="col-md-5 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+          <li class="text-muted">
+             We’ve been working on Go Analytics for the better part of a decade and are super proud of what we’ve created. If you’d like to learn more, or are interested in a job, contact us anytime at <a href="mailto: themes@getbootstrap.com">themes@getbootstrap.com</a>.
+          </li>
+        </ul>
+      </div>
+      <div class="col-md-2 offset-md-1 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+          <li class="text-muted">Features</li>
+          <li class="text-muted">Examples</li>
+          <li class="text-muted">Tour</li>
+          <li class="text-muted">Gallery</li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Apis</h6></li>
+          <li class="text-muted">Rich data</li>
+          <li class="text-muted">Simple data</li>
+          <li class="text-muted">Real time</li>
+          <li class="text-muted">Social</li>
+        </ul>
+      </div>
+      <div class="col-md-2 mb-5">
+        <ul class="list-unstyled list-spaced">
+          <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+          <li class="text-muted">Terms</li>
+          <li class="text-muted">Privacy</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <script src="{% static 'blog/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/tether.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/toolkit.js' %}"></script>
+    <script src="{% static 'blog/assets/js/main.js' %}"></script>
+    <script src="{% static 'blog/assets/js/application.js' %}"></script>
+  </body>
+</html>
