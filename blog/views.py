@@ -8,6 +8,9 @@ from .models import Post
 class IndexView(generic.TemplateView):
     template_name = "blog/index.html"
 
+class SoonView(generic.TemplateView):
+    template_name = "blog/soon.html"
+
 class AboutView(generic.TemplateView):
     template_name = "blog/about.html"
 

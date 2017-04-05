@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% load staticfiles %}
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="">
+
+    <title>
+      
+        Attomik - Talent on demand
+
+    </title>
+
+    <link rel="shortcut icon" href="{% static 'blog/assets/img/physics2.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'blog/assets/img/physics2.png' %}" type="image/x-icon">
+
+    
+      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+      <link href="{% static 'blog/assets/css/toolkit-startup.css' %}" rel="stylesheet">
+      <link href="{% static 'blog/assets/css/application-startup.css' %}" rel="stylesheet">
+      <link href="{% static 'blog/assets/css/main.css' %}" rel="stylesheet">
+      
+      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    <style>
+      /* note: this is a hack for ios iframe for bootstrap themes shopify page */
+      /* this chunk of css is not part of the toolkit :) */
+      /* …curses ios, etc… */
+      @media (max-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+        body {
+          width: 1px;
+          min-width: 100%;
+          *width: 100%;
+        }
+        #stage {
+          height: 1px;
+          overflow: auto;
+          min-height: 100vh;
+          -webkit-overflow-scrolling: touch;
+        }
+      }
+    </style>
+  </head>
+
+
+<body>
+
+
+
+<div class="stage" id="stage">
+
+
+
+
+<div class="block block-inverse block-fill-height app-header"
+     style="background-image: url({% static 'blog/assets/img/bg1.jpg' %});">
+
+  <div class="container py-4 fixed-top app-navbar">
+  <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">
+
+    <a class="navbar-brand mr-auto" href="">
+      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      Attomik
+    </a>
+
+  </nav>
+</div>
+
+
+  <img class="app-graph"  src="{% static 'blog/assets/img/startup-0.svg' %}">
+
+  <div class="block-xs-middle pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-lg-6">
+          <h1 class="block-titleData frequency">Talent on demand.</h1>
+          <p class="lead mb-4 text-muted">The best companies win with the best talent, but great people can be hard to find. We connect you with top freelance experts to help you fuel your success.</p>
+          <small>Sign up to get on the waitlist</small>
+          <form class="form-inline d-flex">
+            <input class="form-control mb-3" placeholder="email address">
+            &nbsp
+            <button class="btn btn-primary mb-3">Sign up</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+
+    <script src="{% static 'blog/assets/js/jquery.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/tether.min.js' %}"></script>
+    <script src="{% static 'blog/assets/js/toolkit.js' %}"></script>
+    <script src="{% static 'blog/assets/js/main.js' %}"></script>
+    <script src="{% static 'blog/assets/js/application.js' %}"></script>
+  </body>
+</html>

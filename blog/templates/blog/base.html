@@ -1,28 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     {% load staticfiles %}
+
+    <!-- Meta -->
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Attomik helps great companies find and hire developers, engineers and designers to help with the next big project fast an easy.">
+    <meta name="keywords" content="attomik, talent, talent on demand, on demand, software, developers, designers">
+    <meta name="author" content="Attomik">
 
     <title>
       
-        Atomic Labs
+        Attomik - Talent on demand
 
     </title>
 
-    
-      <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
-      <link href="{% static 'blog/assets/css/toolkit-startup.css' %}" rel="stylesheet">
-      <link href="{% static 'blog/assets/css/application-startup.css' %}" rel="stylesheet">
-      <link href="{% static 'blog/assets/css/main.css' %}" rel="stylesheet">
-      
-      <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="{% static 'blog/assets/img/physics2.png' %}" type="image/x-icon">
+    <link rel="icon" href="{% static 'blog/assets/img/physics2.png' %}" type="image/x-icon">
+
+    <!-- Fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lora:400,400italic|Work+Sans:300,400,500,600' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Styles -->
+    <link href="{% static 'blog/assets/css/toolkit-startup.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/assets/css/application-startup.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/assets/css/main.css' %}" rel="stylesheet">
+    <link href="{% static 'blog/assets/css/animate.css' %}" rel="stylesheet">
 
     <style>
       /* note: this is a hack for ios iframe for bootstrap themes shopify page */
@@ -69,47 +77,47 @@
 
 <div class="stage" id="stage">
 
-{% block content %}
-{% endblock %}
+  {% block content %}
+  {% endblock %}
 
-<div class="block block-inverse app-footer">
- <div class="container">
-    <div class="row">
-      <div class="col-md-5 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
-          <li class="text-muted">
-             Atomic Labs helps great companies find and hire developers, engineers and designers to help with the next big project fast an easy. Send us an email at <a href="mailto: themes@getbootstrap.com">hire@atomiclabs.com</a>.
-          </li>
-        </ul>
-      </div>
-      <!--<div class="col-md-2 offset-md-1 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
-          <li class="text-muted">Features</li>
-          <li class="text-muted">Examples</li>
-          <li class="text-muted">Tour</li>
-          <li class="text-muted">Gallery</li>
-        </ul>
-      </div>-->
-      <div class="col-md-2 offset-3 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Main</h6></li>
-          <li class="text-muted"><a href="{% url 'blog:talent' %}">Talent</a></li>
-          <li class="text-muted"><a href="{% url 'blog:about' %}">About</a></li>
-          <li class="text-muted"><a href="{% url 'blog:faq' %}">FAQ</a></li>
-        </ul>
-      </div>
-      <div class="col-md-2 mb-5">
-        <ul class="list-unstyled list-spaced">
-          <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
-          <li class="text-muted">Terms</li>
-          <li class="text-muted">Privacy</li>
-        </ul>
+  <div class="block block-inverse app-footer">
+   <div class="container">
+      <div class="row">
+        <div class="col-md-5 mb-5">
+          <ul class="list-unstyled list-spaced">
+            <li class="mb-2"><h6 class="text-uppercase">About</h6></li>
+            <li class="text-muted">
+               Attomik helps great companies find and hire developers, engineers and designers to help with the next big project fast an easy. Send us an email at <a href="mailto: themes@getbootstrap.com">hello@attomik.com</a>.
+            </li>
+          </ul>
+        </div>
+        <!--<div class="col-md-2 offset-md-1 mb-5">
+          <ul class="list-unstyled list-spaced">
+            <li class="mb-2"><h6 class="text-uppercase">Product</h6></li>
+            <li class="text-muted">Features</li>
+            <li class="text-muted">Examples</li>
+            <li class="text-muted">Tour</li>
+            <li class="text-muted">Gallery</li>
+          </ul>
+        </div>-->
+        <div class="col-md-2 offset-3 mb-5">
+          <ul class="list-unstyled list-spaced">
+            <li class="mb-2"><h6 class="text-uppercase">Main</h6></li>
+            <li class="text-muted"><a href="{% url 'blog:talent' %}">Talent</a></li>
+            <li class="text-muted"><a href="{% url 'blog:about' %}">About</a></li>
+            <li class="text-muted"><a href="{% url 'blog:faq' %}">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-md-2 mb-5">
+          <ul class="list-unstyled list-spaced">
+            <li class="mb-2"><h6 class="text-uppercase">Legal</h6></li>
+            <li class="text-muted">Terms</li>
+            <li class="text-muted">Privacy</li>
+          </ul>
+        </div>
       </div>
     </div>
   </div>
-</div>
 
 </div>
 
