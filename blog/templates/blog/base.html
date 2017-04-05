@@ -51,16 +51,13 @@
   <ul class="nav nav-bordered nav-stacked flex-column">
     <li class="nav-header">Main</li>
     <li class="nav-item">
-      <a class="nav-link active" href="index.html">Talent</a>
+      <a href="{% url 'blog:talent' %}" class="nav-link active" href="index.html">Talent</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+      <a href="{% url 'blog:about' %}" class="nav-link" href="{% url 'blog:about' %}">About</a>
     </li>
     <li class="nav-item">
-      <a class="nav-link" href="bold/index.html">FAQ</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="bold/index.html">Careers</a>
+      <a href="{% url 'blog:faq' %}" class="nav-link" href="bold/index.html">FAQ</a>
     </li>
     <li class="nav-divider"></li>
     <li class="nav-header">Extras</li>
@@ -98,10 +95,9 @@
       <div class="col-md-2 offset-3 mb-5">
         <ul class="list-unstyled list-spaced">
           <li class="mb-2"><h6 class="text-uppercase">Main</h6></li>
-          <li class="text-muted">Talent</li>
-          <li class="text-muted">About</li>
-          <li class="text-muted">FAQ</li>
-          <li class="text-muted">Careers</li>
+          <li class="text-muted"><a href="{% url 'blog:talent' %}">Talent</a></li>
+          <li class="text-muted"><a href="{% url 'blog:about' %}">About</a></li>
+          <li class="text-muted"><a href="{% url 'blog:faq' %}">FAQ</a></li>
         </ul>
       </div>
       <div class="col-md-2 mb-5">

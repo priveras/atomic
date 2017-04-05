@@ -14,6 +14,12 @@ class AboutView(generic.TemplateView):
 class ThanksView(generic.TemplateView):
     template_name = "blog/thanks.html"
 
+class FaqView(generic.TemplateView):
+    template_name = "blog/faq.html"
+
+class TalentView(generic.TemplateView):
+    template_name = "blog/talent.html"
+
 def hire(request):
     if request.method == 'GET':
         form = PostForm()
