@@ -1,4 +1,5 @@
 atomic/secret.py
 atomic/secret.pyc
 blog/migrations/0002_post_created_at.py
+blog/migrations/0002_post_created_at.pyc
 db.sqlite3
