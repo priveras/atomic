@@ -4,6 +4,9 @@ from .forms import PostForm
 from django.utils import timezone
 from django.http import HttpResponseRedirect, HttpResponse
 from .models import Post
+from django.core.mail import send_mail
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import get_template
 
 class IndexView(generic.TemplateView):
     template_name = "blog/index.html"
@@ -39,6 +42,17 @@ def hire(request):
                 email = form.cleaned_data['email'],
                 created_at = timezone.now()
                 )
+            
+            plaintext = get_template('blog/emails/confirmation_email.txt')
+            htmly     = get_template('blog/emails/confirmation_email.html')
+            subject = 'We received your project info'        
+
+            from_email, to = 'Team Attomik <hello@attomik.ccom>', form.cleaned_data['email']
+            text_content = plaintext.render()
+            html_content = htmly.render()
+            mail = EmailMultiAlternatives(subject, text_content, from_email, [to])
+            mail.attach_alternative(html_content, "text/html")
+            mail.send()
 
             return HttpResponseRedirect('/thanks/')
 
