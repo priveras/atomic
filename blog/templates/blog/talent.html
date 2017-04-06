@@ -54,11 +54,10 @@
     <div class="row">
       <div class="col-lg-7 col-md-6 text-center">
         <img
-          src="{% static 'blog/assets/img/iphone-perspective-sized.jpg' %}"
+          src="{% static 'blog/assets/img/startup-02.svg' %}"
           class="app-translate-5"
           data-transition="entrance"
           style="width:100%">
-        <hr class="mt-0 mb-5 mx-auto hidden-md-up">
       </div>
       <div class="col-lg-5 col-md-6 text-center text-md-left pb-5">
         <p class="lead">
@@ -96,41 +95,96 @@
     </div>
   </div>
 </div>
-<div class="block block-bordered-lg ">
-  <div id="carousel-example-generic" class="carousel carousel-light slide" data-ride="carousel">
-    <div class="carousel-inner" role="listbox">
-      <div class="carousel-item active">
-        <div class="block">
-          <div class="container">
-            <div class="row">
-              <div class="col-sm-8 offset-sm-2">
-                <p class="lead mx-auto text-center">
-                  Instead of guessing how much time you spend on each of your tasks, why not have automagically record everything and have easy reporting without lifting a finger? <span class="hidden-xs">Well now you can with ease.</span>
-                </p>
-              </div>
-            </div>
-            <img class="img-fluid mt-5 app-block-game-img d-block img-fluid" src="{% static 'blog/assets/img/iphone-flat-sized.jpg' %}">
-          </div>
+<div class="block block-inverse app-high-praise"
+     style="background-image: url({% static 'blog/assets/img/tal.png' %});">
+    <div class="container">
+      <div class="row app-align-center py-3">
+        <div class="col-sm-5 push-sm-7 py-5">
+          <h6 class="text-muted text-uppercase mb-2">Selection process</h6>
+          <h3 class="mb-4">Developers hand picked by developers, not recruiters</h3>
         </div>
       </div>
+  </div>
+</div>
+<div class="block block-bordered-lg ">
+  <div class="col-sm-8 offset-sm-2">
+    <p class="lead mx-auto text-center">
+      Our developers and designers have deep experience building complex projects and are leaders in their expertise areas
+    </p>
+    <br>
+    <br>
+    <div class="row my-4">
+    <div class="col-sm-6">
+      <ul class="featured-list featured-list-bordered">
+        <li class="mb-5">
+          <div class="featured-list-icon">
+            <span class="fa fa-users text-primary"></span>
+          </div>
+
+          <h3>Community Leaders</h3>
+          <p>
+            Oue network members are leaders in developer communities like AngularJS, GO, Python and many more.
+          </p>
+        </li>
+
+        <li>
+          <div class="featured-list-icon">
+            <span class="fa fa-code text-primary"></span>
+          </div>
+          <h3>Hackathons Won</h3>
+          <p>
+            Apps and sites built by our members have been recognized by some of the best companies.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <ul class="featured-list featured-list-bordered">
+        <li class="mb-5">
+          <div class="featured-list-icon">
+            <span class="fa fa-trophy text-primary"></span>
+          </div>
+
+          <h3>Company awards</h3>
+          <p>
+            Use Medium to write things down and sound smart. Also when you write, your writings looks pretty and that is cool.
+          </p>
+        </li>
+
+        <li>
+          <div class="featured-list-icon">
+            <span class="fa fa-microchip text-primary"></span>
+          </div>
+          <h3>Robots Built</h3>
+          <p>
+            Use twitter to share 140 characters worth of anything you want. Pictures, videos, etc. It doesn't really matter.
+          </p>
+        </li>
+      </ul>
     </div>
   </div>
-</div>
-<div class="block block-bordered-lg text-center">
-  <div class="container-fluid">
-    <p class="lead mb-4">
-      Join over 900,000 nerds already using Mochi. Get the Mochi App <strong>free</strong> forever!
-    </p>
-    <form class="form-inline d-flex justify-content-center">
-      <input class="form-control mb-3" placeholder="email address">
-      <input class="form-control mb-3 mx-1" type="password" placeholder="Create a Password">
-      <button class="btn btn-primary mb-3">Get started</button>
-    </form>
-    <small class="text-muted">
-      By clicking "Get started" I agree to Mochi's
-      <a href="#">Terms of service</a>
-    </small>
   </div>
 </div>
+<div class="block app-price-plans">
+  <div class="container text-center">
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h6 class="text-muted text-uppercase mb-2">Attomik</h6>
+        <h3>The extra hands you need to get your project from A to Z</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-md-4 col-md-4 px-4 pb-2 mb-5">
+
+        <a href="{% url 'blog:hire' %}" class="btn btn-lg btn-primary btn-block">
+          Hire now
+        </a>
+      </div>
+    </div>
+
+  </div>
+  </div>
 
 {% endblock %}`
