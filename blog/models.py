@@ -28,3 +28,25 @@ class Post(models.Model):
 
 	def __str__(self):
 		return self.email
+
+class Member(models.Model):
+    first_name = models.CharField(max_length=200)
+    last_name = models.CharField(max_length=200)
+    email = models.CharField(max_length=200)
+    profile_image = models.FileField(upload_to='images/%Y%m%d')
+    title = models.CharField(max_length=200)
+    country = models.CharField(max_length=200)
+    city = models.CharField(max_length=200)
+    overview = models.TextField()
+    skills = models.TextField()
+    english_choices = (
+        ('poor', 'Poor'),
+        ('basic', 'Basic'),
+        ('intermediate', 'Intermediate'),
+        ('advanced', 'Advanced'),
+        )
+    english = models.CharField(choices=english_choices, max_length=200)
+    work_history = models.TextField()
+
+    def __str__(self):
+        return self.email
