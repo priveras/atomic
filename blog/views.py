@@ -9,7 +9,7 @@ from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 
 class IndexView(generic.TemplateView):
-    template_name = "blog/soon.html"
+    template_name = "blog/index.html"
 
 class SoonView(generic.TemplateView):
     template_name = "blog/soon.html"
