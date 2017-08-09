@@ -1,0 +1,62 @@
+{% extends 'dashboard/base.html' %}
+{% load staticfiles %}
+{% block content %}
+<div class="wrapper">
+    
+    {% include 'dashboard/sidebar.html' %}
+
+    <div class="main-panel">
+
+        {% include 'dashboard/navbar.html' %}
+
+        <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    {% for freelancer in freelancers_list %}
+                    <div class="col-sm-4">
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="http://dailygenius.com/wp-content/uploads/2014/06/coding_my_life_away_by_izzuthug-d4dgn1d.png" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                    <img class="avatar border-gray" src="{{freelancer.profile_image.url}}" alt="..."/>
+
+                                      <h4 class="title">
+                                      {{freelancer.first_name}} {{freelancer.last_name}}<br />
+                                         <small>{{freelancer.email}}</small>
+                                      </h4>
+                                </div>
+                                <p class="description text-center"> 
+                                    {{freelancer.title}}
+                                </p>
+                                <div class="text-center">
+                                    <p>
+                                    <span class="label label-primary">{{freelancer.skills}}</span>
+                                    </p>
+                                    <p>
+                                    <span class="label label-success">{{freelancer.english|title}} English</span>
+                                    </p>
+                                </div>
+                                <div class="text-justify">
+                                    {{freelancer.overview}}
+                                </div>
+                                <br>
+                                <div class="text-center">
+                                    <span class="text-muted">{{freelancer.work_history}}</span>
+                                </div>
+
+                            </div>
+                            <hr>
+                            <div class="text-center">
+                                <button href="#" class="btn btn-simple"><i class="fa fa-map-marker text-success"></i></button>{{freelancer.city}}, {{freelancer.country}}
+                            </div>
+                        </div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
