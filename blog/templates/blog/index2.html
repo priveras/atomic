@@ -1,0 +1,373 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+
+<div class="block block-inverse block-fill-height app-header"
+     style="background-image: url({% static 'blog/assets/img/bg1.jpg' %});">
+
+  <div class="container py-4 fixed-top app-navbar">
+  <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">
+    <button
+      class="navbar-toggler navbar-toggler-right hidden-md-up"
+      type="button"
+      data-target="#stage"
+      data-toggle="stage"
+      data-distance="-250">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand mr-auto" href="">
+      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      Attomik
+    </a>
+
+    <div class="hidden-sm-down text-uppercase">
+      <ul class="navbar-nav">
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:hire' %}">Hire</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:talent' %}">Talent</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="https://medium.com/@TeamAttomik">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+
+
+  <img class="app-graph"  src="{% static 'blog/assets/img/startup-0.svg' %}">
+
+  <div class="block-xs-middle pb-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-10 col-lg-8">
+          <h1 class="block-titleData frequency">We help you with 
+              <span class="typewrite" data-period="2000" data-type='[ "Web Development", "Mobile Development", "UI/UX", "SEO", "Digital Marketing Strategy" ]'>
+              <span class="wrap"></span>
+              </span>
+          </h1>
+          <div class="row">
+            <div class="col-sm-10 text-justify">
+            <p class="lead mb-4 text-muted">The best companies win with the best talent, but a great partner can be hard to find. We help you design a solid digital strategy that will help you fuel your success.</p>
+            </div>
+          </div>
+          
+          <!--<small>Sign up to get on the waitlist</small>
+
+            <form action="//attomik.us15.list-manage.com/subscribe/post?u=41a43e9033b597fbe2c857b16&amp;id=17ddb14a23" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form-inline d-flex" target="_blank" novalidate>
+              <br>
+              
+              <div class="mc-field-group">
+                <input type="email" value="" name="EMAIL" class="form-control mb-3 required email" id="mce-EMAIL" placeholder="email address">
+              </div>
+              
+              <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_41a43e9033b597fbe2c857b16_17ddb14a23" tabindex="-1" value=""></div>
+              &nbsp
+              <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn btn-primary mb-3 button">
+              <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+              </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                
+          <!--  </form>
+          
+          <script type='text/javascript' src='//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js'></script><script type='text/javascript'>(function($) {window.fnames = new Array(); window.ftypes = new Array();fnames[0]='EMAIL';ftypes[0]='email';fnames[1]='FNAME';ftypes[1]='text';fnames[2]='LNAME';ftypes[2]='text';}(jQuery));var $mcj = jQuery.noConflict(true);</script> -->
+          <!--End mc_embed_signup-->
+
+          <a href="{% url 'blog:hire' %}" class="btn btn-primary btn-lg">I need this</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="block block-secondary app-iphone-block">
+  <div class="container">
+    <div class="row app-align-center">
+
+      <div class="col-sm-5 hidden-sm-down">
+        <img class="app-iphone" src="{% static 'blog/assets/img/startup-2c.jpg' %}" style="width: 100%;">
+      </div>
+
+      <div class="col-md-6 offset-md-1 col-sm-12 offset-sm-0">
+        <h6 class="text-muted text-uppercase">Our Team</h6>
+        <h3>A+ Players</h3>
+        <p class="lead mb-4">Our professional network selection process is extensive, and we’ve taken great care to hand-pick only the very best talent. <br/><br/> We’ve formed a compact, invite only, close-knit team of highly effective A+ players, each with expansive knowledge of his/her realm, and unparalleled attention to detail.</p>
+        <!--<div class="row hidden-md-down">
+          <div class="col-sm-6 mb-3">
+            <h5>Data frequency</h5>
+            <p>We’ve formed a compact, close-knit team of highly effective A+ players, each with expansive knowledge of his/her realm, and unparalleled attention to detail. <a href="#" class="text-primary">Learn more.</a></p>
+          </div>
+          <div class="col-sm-6">
+            <h5>Reliability &amp; uptime</h5>
+            <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime, always. <a href="#" class="text-primary">Learn more</a>.</p>
+          </div>
+        </div>-->
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="block block-inverse block-secondary app-code-block">
+  <div class="container">
+    <div class="row app-align-center">
+    <div class="col-sm-5 push-md-7">
+        <ul class="featured-list featured-list-bordered">
+          <li class="m-b-md">
+            <div class="featured-list-icon">
+              <i class="fa fa-code"></i>
+            </div>
+            <h3>Web Development</h3>
+            <p>
+              Our team is ready to cover anything from simple websites to complicated backends.
+            </p>
+          </li>
+
+          <li>
+            <div class="featured-list-icon">
+              <i class="fa fa-mobile"></i>
+            </div>
+            <h3>Mobile Development</h3>
+            <p>
+              iOS, Android or any other. You name it, we've got you covered.
+            </p>
+          </li>
+          <li>
+            <div class="featured-list-icon">
+              <i class="fa fa-vcard-o"></i>
+            </div>
+            <h3>UI/UX and Design</h3>
+            <p>
+              Whatever your design needs, we have someone who can help you.
+            </p>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-6 pull-md-5 text-justify">
+        <h6 class="text-muted text-uppercase">Easy process</h6>
+        <h3>Tell us what you need and we'll get you the best resources.</h3>
+        <p class="lead mb-4 text-muted">Our process is simple. You just have to share the main details of your project and we'll help you figure out the best way to achieve your goals.</p>
+        <!--<button class="btn btn-secondary btn-lg btn-borderless">
+          Read our docs
+        </button>-->
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="block block-inverse app-high-praise"
+     style="background-image: url({% static 'blog/assets/img/bg2.jpg' %});">
+    <div class="container">
+      <div class="row app-align-center py-3">
+        <div class="col-sm-5 push-sm-7 py-5">
+          <h6 class="text-muted text-uppercase mb-2">High Praise</h6>
+          <h3 class="mb-4">“Attomik makes the process of Hiring the best people easier than ever”</h3>
+          <p class="mb-4 text-muted">Pamela Valdes, founder of Beek.io</p>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="block app-ribbon py-5">
+  <div class="container text-center">
+    <img style="width:150px" src="{% static 'blog/assets/img/logo-techstars.svg' %}">
+    <img style="width:150px" src="{% static 'blog/assets/img/logo-sosv.svg' %}">
+    <img style="width:150px" src="{% static 'blog/assets/img/logo-zxventures.svg' %}">
+    <img style="width:150px" src="{% static 'blog/assets/img/logo-abinbev.svg' %}">
+    <img style="width:150px" src="{% static 'blog/assets/img/logo-budweiser.svg' %}">
+  </div>
+</div>
+
+<!--<div class="block app-ribbon py-5">
+  <div class="container text-xs-center">
+    <img src="{% static 'blog/assets/img/startup-4.svg' %}">
+    <img src="{% static 'blog/assets/img/startup-5.svg' %}">
+    <img src="{% static 'blog/assets/img/startup-6.svg' %}">
+    <img src="{% static 'blog/assets/img/startup-7.svg' %}">
+    <img src="{% static 'blog/assets/img/startup-8.svg' %}">
+  </div>
+</div>-->
+
+<div class="block block-secondary app-block-marketing-grid">
+  <div class="container text-xs-center">
+
+    <div class="row mb-5">
+      <div class="col-xs-10 offset-xs-1 col-sm-8 offset-sm-2 col-lg-6 offset-lg-3">
+        <h6 class="text-muted text-uppercase mb-2">Why us</h6>
+        <h3  class="mb-4">We help you get shit done</h3>
+      </div>
+    </div>
+
+    <div class="row app-marketing-grid">
+      <div class="col-md-4 px-4 mb-5">
+        <i class="text-primary fa fa-dollar" style="font-size:100px; margin-bottom:50px; color: #25272c"></i>
+        <p><strong>Great Prices.</strong> The most competitive prices for software development and design.</p>
+      </div>
+      <div class="col-md-4 px-4 mb-5">
+        <i class="text-primary fa fa-clock-o" style="font-size:100px; margin-bottom:50px; color: #25272c"></i>
+        <p><strong>On Demand.</strong> Start working in a matter of days not weeks.</p>
+      </div>
+      <div class="col-md-4 px-4 mb-5">
+        <i class="text-primary fa fa-support" style="font-size:100px; margin-bottom:50px; color: #25272c"></i>
+        <p><strong>Great support.</strong> We’re always here for you no matter what time of day.</p>
+      </div>
+    </div>
+
+    <!--<div class="row app-marketing-grid">
+      <div class="col-md-4 px-4 mb-5">
+        <img class="mb-1" src="{% static 'blog/assets/img/startup-10.svg' %}">
+        <p><strong>E-commerce.</strong> We automatically handle all sales analytics.</p>
+      </div>
+      <div class="col-md-4 px-4 mb-5">
+        <img class="mb-1" src="{% static 'blog/assets/img/startup-13.svg' %}">
+        <p><strong>Mobile apps.</strong> iOS and Android apps available for monitoring.</p>
+      </div>
+      <div class="col-md-4 px-4 mb-5">
+        <img class="mb-1" src="{% static 'blog/assets/img/startup-14.svg' %}">
+        <p><strong>Secure connections.</strong> Every single request is routed through HTTPS.</p>
+      </div>
+    </div>-->
+  </div>
+</div>
+
+<div class="block app-price-plans">
+  <div class="container text-center">
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h6 class="text-muted text-uppercase mb-2">Attomik</h6>
+        <h3>On demand A+ players to help you develop your projects</h3>
+      </div>
+    </div>
+    <!--<div class="row mb-5">
+      <div class="col-sm-2 offset-sm-5">
+        <img src="{% static 'blog/assets/img/physics.svg' %}">
+      </div>
+    </div>-->
+
+    <div class="row">
+      <!--<div class="col-md-4 px-4 pb-2 mb-5">
+        <div class="px-2 mb-2">
+          <h6 class="text-muted text-uppercase mb-4">Personal</h6>
+          <img class="mb-4" src="{% static 'blog/assets/img/startup-15.svg' %}">
+          <p class="pb-2">Plenty of processing power for any personal projects, big or small.</p>
+        </div>
+
+        <ul class="list-unstyled list-bordered text-xs-left my-4">
+          <li class="py-4"><strong>10k</strong> monthly requests</li>
+          <li class="py-4"><strong>9am-5pm</strong> technical supprt</li>
+          <li class="py-4"><strong>Public</strong> API access</li>
+        </ul>
+
+        <button class="btn btn-lg btn-primary btn-block">
+          I want to hire</span>
+        </button>
+      </div>-->
+
+      <div class="offset-md-4 col-md-4 px-4 pb-2 mb-5">
+        <!--<div class="px-2">
+          <h6 class="text-muted text-uppercase mb-4">Business</h6>
+          <img class="mb-4" src="{% static 'blog/assets/img/startup-16.svg' %}">
+          <p class="pb-2">The perfect sized plan for small businesses to get started.</p>
+        </div>
+
+        <ul class="list-unstyled list-bordered text-xs-left my-4">
+          <li class="py-4"><strong>100k</strong> monthly requests</li>
+          <li class="py-4"><strong>24/7</strong> technical supprt</li>
+          <li class="py-4"><strong>Public</strong> API access</li>
+        </ul>-->
+
+        <a href="{% url 'blog:hire' %}" class="btn btn-lg btn-primary btn-block">
+          Hire now
+        </a>
+      </div>
+
+      <!--<div class="col-md-4 px-4 pb-1 mb-5">
+        <div class="px-2">
+          <h6 class="text-muted text-uppercase mb-4">Corporate</h6>
+          <img class="mb-4" src="{% static 'blog/assets/img/startup-17.svg' %}">
+          <p class="pb-2">An unlimited plan that will scale infinitely to any size project.</p>
+        </div>
+
+        <ul class="list-unstyled list-bordered text-xs-left my-4">
+          <li class="py-4"><strong>Unlimited</strong> monthly requests</li>
+          <li class="py-4"><strong>24/7</strong> technical supprt</li>
+          <li class="py-4"><strong>Public &amp; Private</strong> API access</li>
+        </ul>
+
+        <button class="btn btn-lg btn-primary btn-block">
+          Start <span class="hidden-lg-down">a corporate account</span>
+        </button>
+      </div>-->
+    </div>
+
+  </div>
+</div>
+<script type="text/javascript">
+  var TxtType = function(el, toRotate, period) {
+      this.toRotate = toRotate;
+      this.el = el;
+      this.loopNum = 0;
+      this.period = parseInt(period, 10) || 2000;
+      this.txt = '';
+      this.tick();
+      this.isDeleting = false;
+  };
+
+  TxtType.prototype.tick = function() {
+      var i = this.loopNum % this.toRotate.length;
+      var fullTxt = this.toRotate[i];
+
+      if (this.isDeleting) {
+      this.txt = fullTxt.substring(0, this.txt.length - 1);
+      } else {
+      this.txt = fullTxt.substring(0, this.txt.length + 1);
+      }
+
+      this.el.innerHTML = '<span class="wrap">'+this.txt+'</span>';
+
+      var that = this;
+      var delta = 200 - Math.random() * 100;
+
+      if (this.isDeleting) { delta /= 2; }
+
+      if (!this.isDeleting && this.txt === fullTxt) {
+      delta = this.period;
+      this.isDeleting = true;
+      } else if (this.isDeleting && this.txt === '') {
+      this.isDeleting = false;
+      this.loopNum++;
+      delta = 500;
+      }
+
+      setTimeout(function() {
+      that.tick();
+      }, delta);
+  };
+
+  window.onload = function() {
+      var elements = document.getElementsByClassName('typewrite');
+      for (var i=0; i<elements.length; i++) {
+          var toRotate = elements[i].getAttribute('data-type');
+          var period = elements[i].getAttribute('data-period');
+          if (toRotate) {
+            new TxtType(elements[i], JSON.parse(toRotate), period);
+          }
+      }
+      // INJECT CSS
+      var css = document.createElement("style");
+      css.type = "text/css";
+      css.innerHTML = ".typewrite > .wrap { border-right: 0.08em solid #fff}";
+      document.body.appendChild(css);
+  };
+</script>
+
+{% endblock %}
