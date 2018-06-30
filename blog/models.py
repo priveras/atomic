@@ -7,8 +7,9 @@ class Post(models.Model):
 	name = models.CharField(max_length=200)
 	email = models.CharField(max_length=200)
 	project_choices = (
-    	('mobile', 'Mobile'),
-    	('web', 'Web'),
+        ('web', 'Web Development'),
+    	('mobile', 'Mobile Development'),
+        ('strategy', 'Digital Strategy'),
     	('other', 'Other'),
     	)
 	project = models.CharField(choices=project_choices, max_length=200)
@@ -29,3 +30,9 @@ class Post(models.Model):
 	def __str__(self):
 		return self.email
 
+class Company(models.Model):
+    name = models.CharField(max_length=200)
+    description = models.CharField(max_length=200)
+
+    def __str__(self):
+        return self.email

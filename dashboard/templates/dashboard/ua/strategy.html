@@ -1,0 +1,169 @@
+{% extends 'dashboard/base.html' %}
+{% load staticfiles %}
+{% block bread_crumbs %}
+<h3 class="text-themecolor m-b-0 m-t-0">Business & Customer Strategy</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+    <li class="breadcrumb-item">User Acquisition</li>
+    <li class="breadcrumb-item active">B&C Strategy</li>
+</ol>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card text-justify">
+            <div class="card-body">
+                <h4 class="card-title">Business & Customer Strategy</h4>
+                <h6 class="card-subtitle">Use this tool to add all info around your business and customer strategy</h6>
+                <p><b class="text-primary">Digital Marketing</b> is always a changing system. It’s measurable, iterable, and we can optimize accurately.</p>
+                <p>The most important part of the customer acquisition journey is to clearly understand who are you targeting, where to reach them and how. For that, you have to make sure you understand what your value proposition is.</p>
+                <p>A value proposition answers the question... “Why am I better off with this product, good, or service?</p>
+                <p><b>How do customers interpret value?</b></p>
+                <ol>
+                    <li><b class="text-success">Psychological</b>: emotional or inexplicable benefits “It makes me feel good”</li>
+                    <li><b class="text-success">Economically</b>: financial benefits “Buy this one to save money”</li>
+                    <li><b class="text-success">Functional</b>: utility gained from the product or service “Helps me do things better or faster”</li>
+                </ol>
+                <p>The popular way to communicate it clearly and concisely is an <b class="text-primary">ELEVATOR PITCH</b>.</p>
+            </div>
+        </div>
+        <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Elevator Pitch</h4>
+
+                <p>It’s how you express your customer value. It can change based on the person that you’re talking to.</p>
+
+                <p><b class="text-primary">Elevator Pitch sentence structure:</b></p>
+
+                <p>FOR (target customer), WHO HAS (customer need), (product name) IS A (market category) THAT (one key benefit) UNLIKE (competition), THE PRODUCT (unique differentiation).</p>
+
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Example and Tips
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <p><b class="text-success">Example Elevator Pitch:</b></p>
+
+                    <p>For young and connected people, who have the need of getting groceries, this company is an on-demand service that unlike groceries stores, will get beer delivered to your home.</p>
+
+                    <p><b class="text-success">Some tips:</b></p>
+                    <ul>
+                        <li>Elevator pitches are used both internally and externally but, for our purposes, try to use the customer’s voice instead of internal jargon.</li>
+                        <li>There are trade offs to naming vs. describing your business’ competition. </li>
+                        <li>Instead of your company’s name, you may need to describe:
+                            <ol>
+                                <li>Its market category</li>
+                                <li>One key benefit</li>
+                                <li>A unique differentiator</li>
+                            </ol>
+                        </li>
+                    </ul>
+                  </div>
+                </div>
+                <form class="floating-labels m-t-40">
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input1"></textarea>
+                        <span class="bar"></span>
+                        <label for="input1">Write your elevator pitch here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Customer Persona</h4>
+
+                <p>To define your ideal customer you can take characteristics and create a name, person or character.</p>
+
+                <p>There are different personas. You can identify primary or secondary personas.</p>
+                <ul>
+                    <li><b class="text-success">Primary persona</b>: who you think your primary revenue driver is</li>
+                    <li><b class="text-success">Secondary personas</b>: are others that drive revenue but are more infrequent or sub revenue generators</li>
+                </ul>
+
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Examples
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    <i>Sally is a mom and recently launched her own eCommerce startup. Once upon a time, she had no clue how to build a website, but she figured it out. She runs her business from the desk in the corner of her apartment. It’s covered in Post-Its, unopened mail, and unsealed boxes for customer purchases she’s not yet shipped — it’s safe to say she isn’t fully digital in her business operations. When she isn’t listening to the sound of her own typing replying to customer inquiries, she hears the sounds of toddler gurgles or the TV running in the background (always tuned the local news), which drown out the city sirens. Sally lives between the physical and digital worlds. She still subscribes to some paper magazines (Vogue and Vanity Fair), while consuming others (Inc. & Real Simple) on her iPhone. She doesn’t have time for social media and finds that it depresses her, but she always makes time to volunteer at a local women’s shelter. It’s safe to say that she has her hands full. Everything she does, she does to create a better world for her son.</i>
+                    <br>
+                    <img class="card-img-top img-responsive" style="max-width:700px" src="{% static 'dashboard/assets/img/ua/customer_persona.png' %}" alt="customer persona">
+                  </div>
+                </div>
+                <form class="floating-labels m-t-40">
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input2"></textarea>
+                        <span class="bar"></span>
+                        <label for="input2">Define your customer persona here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+         <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Empathy Map</h4>
+
+                <p>Customer Empathy Maps help you expand your personas. They focus on further defining a customer’s motivations, needs and behaviors. It makes the persona a bit more human.</p>
+
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample2" role="button" aria-expanded="false" aria-controls="collapseExample2">
+                    Examples
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample2">
+                  <div class="card card-body">
+                    <i>Sally is a mom and recently launched her own eCommerce startup. Once upon a time, she had no clue how to build a website, but she figured it out. She runs her business from the desk in the corner of her apartment. It’s covered in Post-Its, unopened mail, and unsealed boxes for customer purchases she’s not yet shipped — it’s safe to say she isn’t fully digital in her business operations. When she isn’t listening to the sound of her own typing replying to customer inquiries, she hears the sounds of toddler gurgles or the TV running in the background (always tuned the local news), which drown out the city sirens. Sally lives between the physical and digital worlds. She still subscribes to some paper magazines (Vogue and Vanity Fair), while consuming others (Inc. & Real Simple) on her iPhone. She doesn’t have time for social media and finds that it depresses her, but she always makes time to volunteer at a local women’s shelter. It’s safe to say that she has her hands full. Everything she does, she does to create a better world for her son.</i>
+                    <br>
+                    <img class="card-img-top img-responsive" style="max-width:700px" src="{% static 'dashboard/assets/img/ua/customer_persona.png' %}" alt="customer persona">
+                  </div>
+                </div>
+                <form class="floating-labels m-t-40">
+                    <p><b class="text-success">General Data</b>: Age, Sex, Income, Residence, etc.</p>
+                    <br>
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Add "General" data here...</label>
+                    </div>
+                    <p><b class="text-success">Think and feel</b>: What really counts? What mayor preoccupations? What worries and aspirations?</p>
+                    <br>
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Add "Think and Feel" data here...</label>
+                    </div>
+                    <p><b class="text-success">See</b>: What is their environment? Who are their friends? What's happening int their market?</p>
+                    <br>
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Add "See" data here...</label>
+                    </div>
+                    <p><b class="text-success">Say & Do</b>: What is their attitude and behaviour in public? What are their fears and obstacles? How do they measure success?</p>
+                    <br>
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Add "Say & Do" data here...</label>
+                    </div>
+                    <p><b class="text-success">Hear</b>: What do their influencers say? What does their boss say? What do their friends say?</p>
+                    <br>
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Add "Hear" data here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

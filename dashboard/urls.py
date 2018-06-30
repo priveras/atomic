@@ -4,6 +4,9 @@ from . import views
 
 app_name = 'dashboard'
 urlpatterns = [
-    url(r'^dashboard/$', views.DashboardView.as_view(), name='dashboard'),
+    url(r'^dashboard/user_acquisition/strategy$', views.StrategyView.as_view(), name='strategy'),
+    url(r'^dashboard/user_acquisition/seo$', views.SeoView.as_view(), name='seo'),
+    url(r'^dashboard/user_acquisition/seo/checklist$', views.SeoChecklistView.as_view(), name='seo-checklist'),
+    url(r'^dashboard/user_acquisition/objective-first$', views.ObjectiveFirstView.as_view(), name='objective-first'),
     url(r'^dashboard/freelancers/$', views.FreelancerListView.as_view(), name='freelancers'),
 ]

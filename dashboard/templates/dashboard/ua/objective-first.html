@@ -1,0 +1,104 @@
+{% extends 'dashboard/base.html' %}
+{% load staticfiles %}
+{% block bread_crumbs %}
+<h3 class="text-themecolor m-b-0 m-t-0">Objective First Framework</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+    <li class="breadcrumb-item">User Acquisition</li>
+    <li class="breadcrumb-item active">Objective First Framework</li>
+</ol>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card text-justify">
+            <div class="card-body">
+                <h4 class="card-title">Objective First Framework</h4>
+                <h6 class="card-subtitle">This is where we’re going and this is how we’re getting there</h6>
+            </div>
+        </div>
+        <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Set Objective</h4>
+
+                <p>When setting objectives you have to be specific. Use <b class="text-primary">SMART</b>objectives</p>
+                <p>Also, you need to know who the customer is before setting your objective.</p>
+
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Example and Tips
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <p><b class="text-success">SMART Objective Structure:</b></p>
+                    <p>Our goal this year/quarter/month is to (INCREASE OR DECREASE) (X) by/to (PLUG IN A SPECIFIC %/PLUG IN A SPECIFIC NUMBER OR COUNT) in order to (BLANK (SHOULD BE SPECIFIC & TIED TO BUSINESS MODEL)).</p>
+
+                    <p><b class="text-success">Example SMART Objective:</b></p>
+                    <p>Convert 33% of leads with customers within 30 days of initial contact.</p>
+
+                  </div>
+                </div>
+                <form class="floating-labels m-t-20">
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input1"></textarea>
+                        <span class="bar"></span>
+                        <label for="input1">Write your SMART objective here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Define KPIs</h4>
+                <p>With metrics, think broad. With key performance indicators, think deep. </p>
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Example and Tips
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <p>KPI: A measurable value that demonstrates how effectively a company is achieving key business objectives. Without establishing and tracking proper key performance indicators, companies would be left in the dark about their performance</p>
+                    <p>Metric: A quantifiable measure that is used to track and assess the status of a specific process. Metrics are important because they are comprised of a wide swathe of all trackable areas. </p>
+                  </div>
+                </div>
+                <form class="floating-labels m-t-20">
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input2"></textarea>
+                        <span class="bar"></span>
+                        <label for="input2">Define your KPIs here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="card text-justify">
+            <div class="card-body">
+
+                <h4 class="card-title">Design Tactics</h4>
+                <p>With metrics, think broad. With key performance indicators, think deep. </p>
+                <p>
+                  <a class="btn btn-success" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                    Example and Tips
+                  </a>
+                </p>
+                <div class="collapse" id="collapseExample">
+                  <div class="card card-body">
+                    <p>KPI: A measurable value that demonstrates how effectively a company is achieving key business objectives. Without establishing and tracking proper key performance indicators, companies would be left in the dark about their performance</p>
+                    <p>Metric: A quantifiable measure that is used to track and assess the status of a specific process. Metrics are important because they are comprised of a wide swathe of all trackable areas. </p>
+                  </div>
+                </div>
+                <form class="floating-labels m-t-20">
+                    <div class="form-group m-b-40">
+                        <textarea class="form-control" rows="4" id="input3"></textarea>
+                        <span class="bar"></span>
+                        <label for="input3">Define your Tactics here...</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'dashboard/base.html' %}
+{% load staticfiles %}
+{% block bread_crumbs %}
+<h3 class="text-themecolor m-b-0 m-t-0">Search Engine Optimization</h3>
+<ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="javascript:void(0)">Home</a></li>
+    <li class="breadcrumb-item">User Acquisition</li>
+    <li class="breadcrumb-item active">SEO</li>
+</ol>
+{% endblock %}
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card text-justify">
+            <div class="card-body">
+                <h4 class="card-title">Search Engine Optimization</h4>
+                <h6 class="card-subtitle">Use this tool to work with search engine optimization for your site</h6>
+                <p><b class="text-primary">What is SEO?</b></p>
+                <p>SEO stands for Search Engine Optimization. It is the practice of improving and promoting a website, in order to increase the number of (non-paid) visitors the site receives from search engines.</p>
+                <p><b class="text-primary">Why is it important?</b></p>
+                <p>Search is a high-intent channel. If you are a user on a search engine, you are actively looking for a solution to a problem. If your business is not found, it is losing revenue.</p>
+                <p><b class="text-primary">Why does it matter?</b></p>
+                <p>SEO matters because it’s a high intent marketing channel. That means that whoever is performing the search, is looking for an answer to a question, therefore the probability for conversion is much higher.</p>
+                <p>In simple terms, search is the channel that has the better quality of visitors and the highest probability for convertion.</p>
+                <p><b class="text-primary">How do I optimize for search engines?</b></p>
+                <p>Basically you just have to build your site to answer questions and have the right setup to allow search engines to find your awesome content.</p>
+                <p>If you have a page that has your address, you have to ask yourself. What question is that answering? If you have an “about me” page, it has to answer questions about “me”.</p>
+                <p>Your answers have to be <b class="text-success">RELEVANT</b> , <b class="text-success">UNIQUE</b> and <b class="text-success">RICH IN CONTENT</b>.</p>
+                <p><b class="text-success">Example</b>: To make an address page more rich, relevant and unique, you can add an address and contact number, a google maps link and a map image.</p>
+                <p>If you provide answers to those questions you’re going to be ranked higher simply because you become more relevant to whoever performed the search.</p>
+                <p><b class="text-success">What to do next?</b>
+                <p>Now that you understand the importance of SEO, it’s time to optimize your website to make sure that search engines will show the content to the relevant searchers.</p>
+                <p>To do this, click on the following link to get the absolute step-by-step guide to help you make the best out of your site.</p>
+                <a href="{% url 'dashboard:seo-checklist' %}"><div class="btn btn-success">Go to SEO Checklist</div></a>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
