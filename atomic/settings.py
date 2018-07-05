@@ -114,7 +114,4 @@ MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 SITE_ID = 1
 
-META_SITE_PROTOCOL = 'http'
-META_SITE_DOMAIN = 'attomik.com'
-
 
