@@ -30,9 +30,12 @@ class Post(models.Model):
 	def __str__(self):
 		return self.email
 
-class Company(models.Model):
-    name = models.CharField(max_length=200)
-    description = models.CharField(max_length=200)
+class Project(models.Model):
+    name = models.CharField(max_length=200, blank=True)
+    excerpt = models.CharField(max_length=200, blank=True)
+    description = models.TextField(blank=True)
+    image = models.FileField(upload_to='images/%Y%m%d')
+    link = models.CharField(max_length=200, blank=True)
 
     def __str__(self):
-        return self.email
+        return self.name

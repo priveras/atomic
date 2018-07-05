@@ -17,7 +17,7 @@
     </button>
 
     <a class="navbar-brand mr-auto" href="{% url 'blog:index' %}">
-      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px" alt="attomik coding">
       Attomik
     </a>
 
@@ -27,10 +27,10 @@
           <a class="nav-link" href="{% url 'blog:hire' %}">Hire</a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link" href="{% url 'blog:talent' %}">Talent</a>
+          <a class="nav-link" href="{% url 'blog:about' %}">About</a>
         </li>
         <li class="nav-item px-1 ">
-          <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+          <a class="nav-link" href="{% url 'blog:work' %}">Work</a>
         </li>
         <li class="nav-item px-1 ">
           <a class="nav-link" href="https://medium.com/@TeamAttomik">Blog</a>
@@ -41,30 +41,154 @@
 </div>
 </div>
 
-
-
-<div class="block text-center">
-  <div class="container-fluid">
-   <blockquote class="pull-quote">
+<div class="block block-bordered-lg">
+  <div class="container text-center app-translate-15" data-transition="entrance">
+    <blockquote class="pull-quote">
       <p>
-        “Hiring the best developers and designers is by far the most difficult process I've gone through.”
+        The right <span class="text-primary">digital partner</span> with extraordinary developers, engineers and designers
       </p>
-      <cite>Louis Aronne, Startup Founder</cite>
     </blockquote>
   </div>
 </div>
-<div class="block block-bordered text-center">
-  <div class="container-fluid">
-    <div class="row text-center">
-      <div class="col-sm-6 offset-3 text-center">
-        <h4>We can change the way you work</h4>
-        <br>
-        <p style="font-size:18px" class="text-justify">
-          At <span class="text-primary"><b> Atomic Labs</b> </span> we believe that great developers are not only looking for jobs but also opportunities. Attomik is The Opportunity Network. Starting with in-demand technology, we intelligently match outstanding people to fulltime and freelance opportunities at the world's most innovative companies. By taking the pain out of the job search, we help people build purpose-driven careers and businesses find the talent to fulfill their missions. Ultimately, we want to empower everyone to find and do their best work, from one opportunity to the next.
+
+
+<div class="block block-bordered-lg pb-0 app-block-stats">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-6 text-center">
+        <h1>More About Us</h1>
+        <img
+          src="{% static 'blog/assets/img/startup-02.svg' %}"
+          class="app-translate-5"
+          data-transition="entrance"
+          style="width:100%">
+      </div>
+      <div class="col-lg-5 col-md-6 text-center text-md-left pb-5">
+        <p class="lead">
+          We have experience building an extensive number of projects across many industries. We are here to help you develop your next big project no matter what it is.
         </p>
+        <div class="row my-4">
+          <div class="col-6 mb-3">
+            <div class="statcard">
+              <h2 class="statcard-number block-title" style="font-size:42px">100+</h2>
+              <span class="statcard-desc">Websites</span>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="statcard">
+              <h2 style="font-size:42px" class="statcard-number block-title">30+</h2>
+              <span class="statcard-desc">Mobile Apps</span>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3">
+          <div class="col-6 mb-3">
+            <div class="statcard">
+              <h2 style="font-size:42px" class="statcard-number block-title">30+</h2>
+              <span class="statcard-desc">Digital Strategies</span>
+            </div>
+          </div>
+          <div class="col-6 mb-3">
+            <div class="statcard">
+              <h2 style="font-size:42px" class="statcard-number block-title text-primary">97%</h2>
+              <span class="statcard-desc">Happiness</span>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
+<div class="block block-inverse app-high-praise"
+     style="background-image: url({% static 'blog/assets/img/tal.png' %});">
+    <div class="container">
+      <div class="row app-align-center py-3">
+        <div class="col-sm-5 push-sm-7 py-5">
+          <h6 class="text-muted text-uppercase mb-2">Our team</h6>
+          <h3 class="mb-4">Developers hand picked by developers, not recruiters</h3>
+        </div>
+      </div>
+  </div>
+</div>
+<div class="block block-bordered-lg ">
+  <div class="col-sm-8 offset-sm-2">
+    <p class="lead mx-auto text-center">
+      Our developers and designers have deep experience building complex projects and are leaders in their expertise areas
+    </p>
+    <br>
+    <br>
+    <div class="row my-4">
+    <div class="col-sm-6">
+      <ul class="featured-list featured-list-bordered">
+        <li class="mb-5">
+          <div class="featured-list-icon">
+            <span class="fa fa-users text-primary"></span>
+          </div>
 
-{% endblock %}
+          <h3>Community Leaders</h3>
+          <p>
+            Oue network members are leaders in developer communities like AngularJS, GO, Python and many more.
+          </p>
+        </li>
+
+        <li>
+          <div class="featured-list-icon">
+            <span class="fa fa-code text-primary"></span>
+          </div>
+          <h3>Hackathons Won</h3>
+          <p>
+            A team of winners. At Attomik you find the people who stands out over the crowd.
+          </p>
+        </li>
+      </ul>
+    </div>
+    <div class="col-sm-6">
+      <ul class="featured-list featured-list-bordered">
+        <li class="mb-5">
+          <div class="featured-list-icon">
+            <span class="fa fa-trophy text-primary"></span>
+          </div>
+
+          <h3>Company awards</h3>
+          <p>
+            Apps and sites built by our members have been recognized by some of the best companies.
+          </p>
+        </li>
+
+        <li>
+          <div class="featured-list-icon">
+            <span class="fa fa-microchip text-primary"></span>
+          </div>
+          <h3>Robots Built</h3>
+          <p>
+            Not only software but also hardware, our developers can thrive in a lot of areas and help you with any project.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </div>
+  </div>
+</div>
+<div class="block app-price-plans">
+  <div class="container text-center">
+
+    <div class="row mb-5">
+      <div class="col-md-8 offset-md-2 col-lg-6 offset-lg-3">
+        <h6 class="text-muted text-uppercase mb-2">Attomik</h6>
+        <h3>We are the right partner to help you get your projects from 0 to 1</h3>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="offset-md-4 col-md-4 px-4 pb-2 mb-5">
+
+        <a href="{% url 'blog:hire' %}" class="btn btn-lg btn-primary btn-block">
+          Hire now
+        </a>
+      </div>
+    </div>
+
+  </div>
+  </div>
+
+{% endblock %}`

@@ -9,8 +9,25 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Attomik is the digital agency that helps great companies with their digital needs. The right team for you software development, seo, and marketign needs">
-    <meta name="keywords" content="attomik, digital agency, digital, agancy, seo, marketing, software, developers, designers">
+    <meta name="keywords" content="attomik, digital agency, digital, agancy, seo, marketing, software, developers, designers, digital strategy">
     <meta name="author" content="Attomik">
+
+  
+    
+    <meta property="og:title" content="Attomik - A New York Digital Agency">
+    <meta property="og:description" content="Attomik is the digital agency that helps great companies with their digital needs. The right team for you software development, seo, and marketign needs">
+    <meta property="og:image" content="http://attomik.com/static/blog/assets/img/bg1.jpg">
+    <meta property="og:url" content="http://attomik.com">
+    <meta property="og:type"   content="website" /> 
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta property="og:site_name" content="Attomik">
+    <meta name="twitter:image:alt" content="Attomik">
+
+    <meta property="fb:app_id" content="210102709641085" />-->
+    <meta name="twitter:site" content="@TeamAttomik">
+
+    <meta name="google-site-verification" content="knlWMbC7_CWUmg1AiH9x23F-NwO91wtSvBtY2BHYaVg" />
 
     <title>
       
@@ -18,8 +35,6 @@
 
     </title>
 
-    <!-- Google Apps -->
-    <meta name="google-site-verification" content="knlWMbC7_CWUmg1AiH9x23F-NwO91wtSvBtY2BHYaVg" />
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="{% static 'blog/assets/img/physics2.png' %}" type="image/x-icon">
@@ -78,10 +93,10 @@
       <a href="{% url 'blog:hire' %}" class="nav-link">Hire</a>
     </li>
     <li class="nav-item">
-      <a href="{% url 'blog:talent' %}" class="nav-link">Talent</a>
+      <a href="{% url 'blog:about' %}" class="nav-link">About</a>
     </li>
     <li class="nav-item">
-      <a href="{% url 'blog:about' %}" class="nav-link">About</a>
+      <a href="{% url 'blog:work' %}" class="nav-link">Work</a>
     </li>
     <li class="nav-item">
       <a href="https://medium.com/@TeamAttomik" class="nav-link">Blog</a>
@@ -114,8 +129,8 @@
           <ul class="list-unstyled list-spaced">
             <li class="mb-2"><h6 class="text-uppercase">Main</h6></li>
             <li class="text-muted"><a href="{% url 'blog:hire' %}">Hire</a></li>
-            <li class="text-muted"><a href="{% url 'blog:talent' %}">Talent</a></li>
             <li class="text-muted"><a href="{% url 'blog:about' %}">About</a></li>
+            <li class="text-muted"><a href="{% url 'blog:work' %}">Work</a></li>
             <li class="text-muted"><a href="https://medium.com/@TeamAttomik">Blog</a></li>
           </ul>
         </div>

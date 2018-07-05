@@ -1,0 +1,91 @@
+{% extends 'blog/base.html' %}
+{% load staticfiles %}
+{% block content %}
+
+<div class="block block-inverse  app-header"
+     style="background-image: url({% static 'blog/assets/img/bg1.jpg' %});">
+
+  <div class="container py-4 fixed-top app-navbar">
+  <nav class="navbar navbar-transparent navbar-padded navbar-toggleable-sm">
+    <button
+      class="navbar-toggler navbar-toggler-right hidden-md-up"
+      type="button"
+      data-target="#stage"
+      data-toggle="stage"
+      data-distance="-250">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <a class="navbar-brand mr-auto" href="{% url 'blog:index' %}">
+      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      Attomik
+    </a>
+
+    <div class="hidden-sm-down text-uppercase">
+      <ul class="navbar-nav">
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:hire' %}">Hire</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:about' %}">About</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="{% url 'blog:work' %}">Work</a>
+        </li>
+        <li class="nav-item px-1 ">
+          <a class="nav-link" href="https://medium.com/@TeamAttomik">Blog</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+</div>
+
+
+
+<div class="block text-center">
+  <div class="container-fluid">
+   <blockquote class="pull-quote">
+      <p>
+        “Finding the <span class="text-primary">right partner</span> is an absolute necesity to build a business this days, <span class="text-primary">Attomik</span> has helped us win on digital”
+      </p>
+      <cite>Sarah Pool, <a href="https://drinkcanvas.com" target="_blank">Canvas</a> Founder</cite>
+    </blockquote>
+  </div>
+</div>
+
+<div class="block block-bordered-lg text-center">
+  <div class="container-fluid">
+    <h1>Our Work</h1>
+    <br><br>
+    <div class="row text-center">
+      <div class="col-sm-10 offset-1 text-center">
+        <div class="row">
+          {% for project in projects_list %}
+          <div class="col-sm-4 text-center">
+            <br>
+            <div class="card">
+              <div class="card-img-top" 
+              style="
+              height: 180px; width: 100%; display: block;
+              background: url('{{project.image.url}}');
+              background-size:cover;
+              background-position:center;
+              "></div>
+              <br>
+              <div class="card-body">
+                <h3 class="card-title">{{project.name}}</h3>
+                <h5>{{project.excerpt}}</h5>
+                <p class="card-text">{{project.description}}</p>
+                <a href="{{project.link}}" target="blank" class="btn btn-primary" style="width:100%">Visit Website</a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
