@@ -2,3 +2,4 @@ atomic/secret.py
 atomic/secret.pyc
 blog/migrations/
 db.sqlite3
+media/
