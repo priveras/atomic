@@ -76,7 +76,7 @@
               <div class="card-body">
                 <h3 class="card-title">{{project.name}}</h3>
                 <h5>{{project.excerpt}}</h5>
-                <p class="card-text text-justify">{{project.description}}</p>
+                <p class="card-text text-justify">{{project.description|linebreaks}}</p>
                 <a href="{{project.link}}" target="blank" class="btn btn-primary" style="width:100%">Visit Website</a>
               </div>
             </div>
