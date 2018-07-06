@@ -23,6 +23,9 @@ class ThanksView(generic.TemplateView):
 class FaqView(generic.TemplateView):
     template_name = "blog/faq.html"
 
+class ServicesView(generic.TemplateView):
+    template_name = "blog/services.html"
+
 class ProjectListView(generic.ListView):
     template_name = 'blog/work.html'
     context_object_name = 'projects_list'

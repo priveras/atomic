@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^about/$', views.AboutView.as_view(), name='about'),
     url(r'^hire/$', views.hire, name='hire'),
+    url(r'^services/$', views.ServicesView.as_view(), name='services'),
     url(r'^faq/$', views.FaqView.as_view(), name='faq'),
     url(r'^coming-soon/$', views.SoonView.as_view(), name='soon'),
     url(r'^work/$', views.ProjectListView.as_view(), name='work'),
