@@ -56,40 +56,43 @@
   </div>
 </div>
 
-<div class="block block-bordered-lg text-center">
-  <div class="container-fluid">
-    <h6 class="text-muted text-uppercase mb-2">Business Talk</h6>
-    <h1>Our Latest Work</h1>
-    <br><br>
-    <div class="row text-center">
-      <div class="col-sm-10 offset-1 text-center">
-        <div class="row">
-          {% for project in projects_list %}
-          <div class="col-sm-4 text-center" style="margin-bottom:50px">
-            <br>
-            <div class="card">
-              <div class="card-img-top" 
-              style="
-              height: 180px; width: 100%; display: block;
-              background: url('{{project.image.url}}');
-              background-size:cover;
-              background-position:center;
-              "></div>
-              <br>
-              <div class="card-body text-justify">
-                <h3 class="card-title text-center">{{project.name}}</h3>
-                <h5 class="text-center">{{project.excerpt}}</h5>
-                <p class="card-text">{{project.description|linebreaks}}</p>
-                <a href="{{project.link}}" target="blank" class="btn btn-primary" style="width:100%">Visit Website</a>
-              </div>
-            </div>
-          </div>
-          {% endfor %}
+{% for project in projects_list %}
+<div class="block block-bordered">
+  <div class="container">
+    <div class="row app-align-center">
+
+      <div class="col-sm-5 hidden-sm-down">
+        <div 
+        style="background-image:url('{{project.image.url}}');
+        width:100%;
+        height:300px;
+        background-size:cover;
+        background-position:center
+        ">
         </div>
       </div>
+
+      <div class="col-md-6 offset-md-1 col-sm-12 offset-sm-0">
+        <h6 class="text-muted text-uppercase">Case Studies</h6>
+        <h3>{{project.name}}</h3>
+        <p class="lead mb-4">{{project.excerpt}}</p>
+        <p class="mb-4">{{project.description}}</p>
+        <!--<div class="row hidden-md-down">
+          <div class="col-sm-6 mb-3">
+            <h5>Data frequency</h5>
+            <p>We’ve formed a compact, close-knit team of highly effective A+ players, each with expansive knowledge of his/her realm, and unparalleled attention to detail. <a href="#" class="text-primary">Learn more.</a></p>
+          </div>
+          <div class="col-sm-6">
+            <h5>Reliability &amp; uptime</h5>
+            <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime, always. <a href="#" class="text-primary">Learn more</a>.</p>
+          </div>
+        </div>-->
+      </div>
     </div>
+
   </div>
 </div>
+{% endfor %}
 <div class="block app-price-plans">
   <div class="container text-center">
 
