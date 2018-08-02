@@ -1,0 +1,13 @@
+.imgborder {
+   display:inline-block;
+   position:relative;
+   padding:5px;
+   background:#f2f2f2;
+   margin-bottom:30px;
+}
+
+.s1 {
+   -webkit-box-shadow: 0 28px 40px -26px rgba(0, 0, 0);
+   -moz-box-shadow: 0 28px 40px -26px rgba(0, 0, 0);
+   box-shadow: 0 28px 40px -26px rgba(0, 0, 0);
+}
