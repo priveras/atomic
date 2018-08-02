@@ -22,7 +22,7 @@
     </button>
 
     <a class="navbar-brand mr-auto" href="{% url 'blog:index' %}">
-      <img src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
+      <img alt="attomik" src="{% static 'blog/assets/img/physics.svg' %}" style="width:20px">
       Attomik
     </a>
 
@@ -58,7 +58,7 @@
     </blockquote>
   </div>
 </div>
-
+<h1 class="text-center mb-5">Our Work</h1>
 {% for project in projects_list %}
 {% if forloop.counter|divisibleby:2 %}
 <div class="block block-bordered">
@@ -83,7 +83,7 @@
       </div>
 
       <div class="col-sm-5 hidden-sm-down">
-        <div class="imgborder s1 s3" 
+        <div title="{{project.name}}" class="imgborder s1 s3" 
         style="background-image:url('{{project.image.url}}');
         width:100%;
         height:300px;
@@ -102,7 +102,7 @@
     <div class="row app-align-center">
 
       <div class="col-sm-5 hidden-sm-down">
-        <div class="imgborder s1 s3" 
+        <div title="{{project.name}}" class="imgborder s1 s3" 
         style="background-image:url('{{project.image.url}}');
         width:100%;
         height:300px;
