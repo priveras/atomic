@@ -2,6 +2,7 @@
 {% load staticfiles %}
 {% block meta %}
 <title>Work | Attomik Digital Agency</title>
+<meta property="og:title" content="Work | Attomik Digital Agency">
 <meta name="description" content="At Attomik, we've worked with great companies facing different challenges. We help any type of company develop a digital strategy and be succesfull with it">
 <meta property="og:description" content="At Attomik, we've worked with great companies facing different challenges. We help any type of company develop a digital strategy and be succesfull with it.">
 {% endblock %}
@@ -65,8 +66,19 @@
   <div class="container">
     <div class="row app-align-center">
 
+      <div class="col-sm-12 hidden-md-up">
+        <div title="{{project.name}}" class="imgborder s1 s3" 
+        style="background-image:url('{{project.image.url}}');
+        width:100%;
+        height:300px;
+        background-size:cover;
+        background-position:center
+        ">
+        </div>
+      </div>
+
        <div class="col-md-6 offset-md-1 col-sm-12 offset-sm-0">
-        <h6 class="text-muted text-uppercase">Case Studies</h6>
+        <h6 class="text-muted text-uppercase">Case Studiesa</h6>
         <h3>{{project.name}}</h3>
         <p class="lead mb-4">{{project.excerpt}}</p>
         <p class="mb-4 tetx-justify">{{project.description|linebreaks}}</p>
@@ -102,6 +114,17 @@
     <div class="row app-align-center">
 
       <div class="col-sm-5 hidden-sm-down">
+        <div title="{{project.name}}" class="imgborder s1 s3" 
+        style="background-image:url('{{project.image.url}}');
+        width:100%;
+        height:300px;
+        background-size:cover;
+        background-position:center
+        ">
+        </div>
+      </div>
+
+      <div class="col-sm-12 hidden-md-up">
         <div title="{{project.name}}" class="imgborder s1 s3" 
         style="background-image:url('{{project.image.url}}');
         width:100%;
