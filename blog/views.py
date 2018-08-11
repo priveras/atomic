@@ -3,7 +3,7 @@ from django.views import generic
 from .forms import PostForm
 from django.utils import timezone
 from django.http import HttpResponseRedirect, HttpResponse
-from .models import Post, Project
+from .models import Post, Project, Blog
 from django.core.mail import send_mail
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
@@ -25,6 +25,20 @@ class FaqView(generic.TemplateView):
 
 class ServicesView(generic.TemplateView):
     template_name = "blog/services.html"
+
+class BlogListView(generic.ListView):
+    template_name = 'blog/blog.html'
+    context_object_name = 'blog_list'
+    model = Blog
+
+    def get_context_data(self, **kwargs):
+        context = super(BlogListView, self).get_context_data(**kwargs)
+
+        return context
+
+class BlogPostView(generic.DetailView):
+    model = Blog
+    template_name = 'blog/blog-post.html'
 
 class ProjectListView(generic.ListView):
     template_name = 'blog/work.html'

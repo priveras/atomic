@@ -39,3 +39,13 @@ class Project(models.Model):
 
     def __str__(self):
         return self.name
+
+class Blog(models.Model):
+    title = models.CharField(max_length=200, blank=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    excerpt = models.CharField(max_length=200, blank=True)
+    body = models.TextField(blank=True)
+    created_at = models.DateTimeField(db_index=True, auto_now_add=True, null=True)
+
+    def __str__(self):
+        return self.title

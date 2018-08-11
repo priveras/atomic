@@ -19,6 +19,8 @@ urlpatterns = [
     url(r'^faq/$', views.FaqView.as_view(), name='faq'),
     url(r'^coming-soon/$', views.SoonView.as_view(), name='soon'),
     url(r'^work/$', views.ProjectListView.as_view(), name='work'),
+    url(r'^blog/$', views.BlogListView.as_view(), name='blog'),
     url(r'^thanks/$', views.ThanksView.as_view(), name='thanks'),
     url(r'^sitemap\.xml$', sitemap, {'sitemaps': sitemaps}, name='django.contrib.sitemaps.views.sitemap'),
+    url(r'^blog/(?P<slug>[^\.]+)/$', views.BlogPostView.as_view(), name='blog-post'),
 ]
