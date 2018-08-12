@@ -66,19 +66,20 @@
 <div class="block block-bordered">
   <div class="container">
     {% for blog in blog_list %}
-    <div class="row app-align-center mb-5">
+    <div class="row app-align-center">
       <div class="col-sm-8 offset-sm-2">
         <a href="{% url 'blog:blog-post' blog.slug %}"><h2 class="post-title" style="color:black; text-decoration: none;">
-          Failure is not an option
+          {{blog.title}}
         </h2></a>
         <p class="lead">
-          Many say exploration is part of our destiny, but it’s actually our duty to future generations.
+          {{blog.excerpt}}
         </p>
         <p class="post-meta">Posted by
           <a href="#">Team Attomik</a>
-          on {{blog.created_at|date}}</p>
+          on {{blog.created_at|date}}
+        </p>
+        <hr>
       </div>
-      <hr>
     </div>
     {% endfor %}
   </div>

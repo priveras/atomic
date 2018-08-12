@@ -28,6 +28,7 @@ ALLOWED_HOSTS = ['*']
 INSTALLED_APPS = [
     'blog',
     'dashboard',
+    'django_summernote',
     'widget_tweaks',
     'django.contrib.admin',
     'django.contrib.auth',

@@ -267,7 +267,6 @@ body {
   font-size: 15px;
   font-weight: 300;
   line-height: 1.4;
-  color: #6c6f73;
   background-color: #fff; }
 
 [tabindex="-1"]:focus {
@@ -316,8 +315,8 @@ a {
   color: #e84c3d;
   text-decoration: none; }
   a:focus, a:hover {
-    color: #006fd8;
-    text-decoration: underline; }
+    color: #e84c3d;
+     }
 
 a:not([href]):not([tabindex]) {
   color: inherit;

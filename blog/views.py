@@ -28,11 +28,11 @@ class ServicesView(generic.TemplateView):
 
 class BlogListView(generic.ListView):
     template_name = 'blog/blog.html'
-    context_object_name = 'blog_list'
     model = Blog
 
     def get_context_data(self, **kwargs):
         context = super(BlogListView, self).get_context_data(**kwargs)
+        context['blog_list'] = Blog.objects.order_by('-created_at')
 
         return context
 
