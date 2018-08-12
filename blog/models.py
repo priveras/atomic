@@ -1,6 +1,7 @@
 from __future__ import unicode_literals
 
 from django.db import models
+from django.core.urlresolvers import reverse
 import datetime
 
 class Post(models.Model):
@@ -42,6 +43,7 @@ class Project(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=200, blank=True)
+    is_draft = models.BooleanField(default=False, blank=True)
     slug = models.SlugField(max_length=200, unique=True)
     excerpt = models.CharField(max_length=200, blank=True)
     body = models.TextField(blank=True)
@@ -49,3 +51,6 @@ class Blog(models.Model):
 
     def __str__(self):
         return self.title
+
+    def get_absolute_url(self):
+        return reverse('blog:blog-post', kwargs={'slug':self.slug})
