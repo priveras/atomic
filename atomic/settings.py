@@ -27,7 +27,6 @@ ALLOWED_HOSTS = ['*']
 
 INSTALLED_APPS = [
     'blog',
-    'ckeditor',
     'dashboard',
     'widget_tweaks',
     'django.contrib.admin',
