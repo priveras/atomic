@@ -1,8 +1,8 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 {% block meta %}
-<title>{{blog.title}} | Attomik Digital Agency</title>
-<meta property="og:title" content="{{blog.title}} | Attomik Digital Agency">
+<title>{{blog.title|truncatehcars:70}} | Attomik Digital Agency</title>
+<meta property="og:title" content="{{blog.title|truncatehcars:70}} | Attomik Digital Agency">
 <meta name="description" content="{{blog.excerpt|truncatechars:150}}">
 <meta property="og:description" content="{{blog.excerpt|truncatechars:150}}">
 {% endblock %}
