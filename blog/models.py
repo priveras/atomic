@@ -43,6 +43,7 @@ class Project(models.Model):
 
 class Blog(models.Model):
     title = models.CharField(max_length=200, blank=True)
+    image = models.FileField(upload_to='images/%Y%m%d')
     is_draft = models.BooleanField(default=False, blank=True)
     slug = models.SlugField(max_length=200, unique=True)
     excerpt = models.CharField(max_length=200, blank=True)
