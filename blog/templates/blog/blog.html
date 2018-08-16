@@ -66,7 +66,7 @@
 <div class="block block-bordered">
   <div class="container">
     {% for blog in blog_list %}
-    <div class="row app-align-center">
+    <div class="row app-align-center mb-5">
       <div class="col-sm-8 offset-sm-2">
         <a href="{% url 'blog:blog-post' blog.slug %}"><h2 class="post-title" style="color:black; text-decoration: none;">
           {{blog.title}}
