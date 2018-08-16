@@ -6,6 +6,8 @@
 <meta property="og:title" content="{{blog.title|truncatechars:70}} | Attomik Digital Agency">
 <meta name="description" content="{{blog.excerpt|truncatechars:150}}">
 <meta property="og:description" content="{{blog.excerpt|truncatechars:150}}">
+<meta name="twitter:image" content="http://attomik.com/{{blog.image.url}}">
+<meta property="og:image" content="http://attomik.com/{{blo.image.url}}">
 {% endblock %}
 {% block content %}
 
@@ -63,6 +65,11 @@
         <p class="lead">
           {{blog.excerpt}}
         </p>
+        <div class="row">
+          <div class="col-sm-12">
+            <img src="{{blog.image.url}}" style="width:100%;" alt="{{blog.title}}" class="img-thumbnail">
+          </div>
+        </div>
         <p class="text-justify" style="font-size:18px; font-family: "Work sans", "Helvetica Neue", Helvetica, Arial, sans-serif;">
           {{blog.body|safe}}
         </p>
