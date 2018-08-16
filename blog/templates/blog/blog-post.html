@@ -1,6 +1,7 @@
 {% extends 'blog/base.html' %}
 {% load staticfiles %}
 {% block meta %}
+<meta property="og:url" content="http://attomik.com/blog/{{blog.slug}}/">
 <title>{{blog.title|truncatechars:70}} | Attomik Digital Agency</title>
 <meta property="og:title" content="{{blog.title|truncatechars:70}} | Attomik Digital Agency">
 <meta name="description" content="{{blog.excerpt|truncatechars:150}}">
