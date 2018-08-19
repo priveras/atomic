@@ -1,7 +1,7 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
 
-from .models import Post, Project, Blog
+from .models import Post, Blog
 
 
 class BlogAdmin(admin.ModelAdmin):
