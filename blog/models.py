@@ -33,7 +33,7 @@ class Post(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=200, blank=True)
-    slug = models.SlugField(max_length=200, unique=True)
+    slug = models.SlugField(max_length=200)
     stack = models.CharField(max_length=200, blank=True)
     image1 = models.FileField(upload_to='images/%Y%m%d', blank=True)
     image2 = models.FileField(upload_to='images/%Y%m%d', blank=True)
