@@ -85,7 +85,7 @@
 
        <div class="col-md-6 offset-md-1 col-sm-12 offset-sm-0">
         <h6 class="text-muted text-uppercase">Case Studies</h6>
-        <h3><a href="{% url 'blog:project' project.slug %}">{{project.name}}</a></h3>
+        <h3><a href="{% url 'blog:project' project.slug %}" style="color:black">{{project.name}}</a></h3>
         <p class="lead mb-4">{{project.excerpt}}</p>
         <p class="mb-4 text-justify" style="font-size:18px">{{project.description1|truncatechars:190}}</p>
         <a href="{% url 'blog:project' project.slug %}" class="btn btn-primary">Read More</a>
@@ -93,7 +93,7 @@
 
       <div class="col-sm-5 hidden-sm-down">
         <div title="{{project.name}}" class="imgborder s1 s3" 
-        style="background-image:url('{{project.image.url}}');
+        style="background-image:url('{{project.image1.url}}');
         width:100%;
         height:300px;
         background-size:cover;
