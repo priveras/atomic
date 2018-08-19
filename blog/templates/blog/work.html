@@ -135,17 +135,7 @@
         <h6 class="text-muted text-uppercase">Case Studies</h6>
         <h3><a href="{% url 'blog:project' project.slug %}" style="color:black">{{project.name}}</a></h3>
         <p class="lead mb-4">{{project.excerpt}}</p>
-        <p class="mb-4 text-justify lead">{{project.description1|linebreaks}}</p>
-        <!--<div class="row hidden-md-down">
-          <div class="col-sm-6 mb-3">
-            <h5>Data frequency</h5>
-            <p>We’ve formed a compact, close-knit team of highly effective A+ players, each with expansive knowledge of his/her realm, and unparalleled attention to detail. <a href="#" class="text-primary">Learn more.</a></p>
-          </div>
-          <div class="col-sm-6">
-            <h5>Reliability &amp; uptime</h5>
-            <p>We process our data across a massively distributed network of reliable servers to ensure 99.99% uptime, always. <a href="#" class="text-primary">Learn more</a>.</p>
-          </div>
-        </div>-->
+        <p class="mb-4 text-justify" style="font-size:18px">{{project.description1}}</p>
       </div>
     </div>
 
