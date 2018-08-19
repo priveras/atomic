@@ -87,7 +87,8 @@
         <h6 class="text-muted text-uppercase">Case Studies</h6>
         <h3><a href="{% url 'blog:project' project.slug %}">{{project.name}}</a></h3>
         <p class="lead mb-4">{{project.excerpt}}</p>
-        <p class="mb-4 text-justify lead">{{project.description|linebreaks}}</p>
+        <p class="mb-4 text-justify" style="font-size:18px">{{project.description1|truncatechars:190}}</p>
+        <a href="{% url 'blog:project' project.slug %}" class="btn btn-primary">Read More</a>
       </div>
 
       <div class="col-sm-5 hidden-sm-down">
