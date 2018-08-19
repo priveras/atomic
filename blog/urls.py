@@ -15,6 +15,7 @@ app_name = 'blog'
 urlpatterns = [
     url(r'^$', views.IndexView.as_view(), name='index'),
     url(r'^blog/(?P<slug>[^\.]+)/$', views.BlogPostView.as_view(), name='blog-post'),
+    url(r'^work/(?P<slug>[^\.]+)/$', views.WorkDetailView.as_view(), name='project'),
     url(r'^about/$', views.AboutView.as_view(), name='about'),
     url(r'^hire/$', views.hire, name='hire'),
     url(r'^services/$', views.ServicesView.as_view(), name='services'),

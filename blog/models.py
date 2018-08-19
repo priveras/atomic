@@ -33,9 +33,16 @@ class Post(models.Model):
 
 class Project(models.Model):
     name = models.CharField(max_length=200, blank=True)
+    slug = models.SlugField(max_length=200, unique=True)
+    stack = models.CharField(max_length=200, blank=True)
+    image1 = models.FileField(upload_to='images/%Y%m%d', blank=True)
+    image2 = models.FileField(upload_to='images/%Y%m%d', blank=True)
+    image3 = models.FileField(upload_to='images/%Y%m%d', blank=True)
+    image4 = models.FileField(upload_to='images/%Y%m%d', blank=True)
     excerpt = models.CharField(max_length=200, blank=True)
-    description = models.TextField(blank=True)
-    image = models.FileField(upload_to='images/%Y%m%d')
+    description1 = models.TextField(blank=True)
+    description2 = models.TextField(blank=True)
+    description3 = models.TextField(blank=True)
     link = models.CharField(max_length=200, blank=True)
 
     def __str__(self):

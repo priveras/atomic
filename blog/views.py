@@ -8,6 +8,10 @@ from django.core.mail import send_mail
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 
+class WorkDetailView(generic.DetailView):
+    model = Project
+    template_name = 'blog/project.html'
+
 class IndexView(generic.TemplateView):
     template_name = "blog/index2.html"
 
