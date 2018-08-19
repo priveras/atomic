@@ -17,5 +17,4 @@ class ProjectTextAdmin(SummernoteModelAdmin):
     summernote_fields = '__all__'
 
 admin.site.register(Post)
-admin.site.register(Project, ProjectAdmin)
 admin.site.register(Blog, BlogTextAdmin)
