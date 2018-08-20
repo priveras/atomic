@@ -64,13 +64,15 @@
         {% if project.excerpt|lower == 'mobile development' %}
         <h4><i class="fa fa-mobile-alt text-primary" style="margin-right:10px"></i> {{project.excerpt}}</h4>
         {% elif project.excerpt == 'web development' %}
-
+        <h4><i class="fa fa-laptop text-primary" style="margin-right:10px"></i> {{project.excerpt}}</h4>
         {% else %}
         {% endif %}
 
-        <span class="lead text-justify" style="margin-top:20px">
-          {{project.description1|linebreaks}}
-        </span>
+        <div style="margin-top:50px">
+          <span class="lead text-justify">
+            {{project.description1|linebreaks}}
+          </span>
+        </div>
         {% if project.slug == 'toplist' %}
         <img class="hidden-sm-down" src="{% static 'blog/assets/img/iPhone-5s-mockup.jpg' %}" style="width:375px" >
         <video class="hidden-sm-down" loop autoplay style="width:300px; position:absolute; margin-left:-336px; margin-top:118px">
@@ -100,14 +102,15 @@
 <div class="block pb-0 app-block-stats" style="margin-bottom:100px; margin-top:100px">
   <div class="container">
     <div class="row">
-      <div class="col-lg-7 col-md-6 text-center">
+      <div class="col-lg-7 col-md-12 text-center">
         <img
           src="{{project.image4.url}}"
           class="app-translate-5"
           data-transition="entrance"
           style="width:90%">
       </div>
-      <div class="col-lg-5 col-md-6 text-center text-md-left pb-5">
+
+      <div class="col-lg-5 col-md-12 text-center text-md-left pb-5" style="margin-top:40px">
         <h6 class="text-muted text-uppercase text-center">Our Work</h6>
         <h3 class="text-center" style="margin-bottom:50px">More About {{project.name}}</h3>
         <p style="font-size:18px" class="text-justify">
