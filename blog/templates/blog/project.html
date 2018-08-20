@@ -82,14 +82,6 @@
           Your browser does not support the video tag.
         </video>
         <img src="{{project.image2.url}}" style="width:100%; margin-top:70px" class="hidden-sm-up">
-        {% elif project.slug == 'beerhouse' %}
-        <img class="hidden-sm-down" src="{% static 'blog/assets/img/thunder.png' %}" style="width:600px" >
-        <video class="hidden-sm-down" loop autoplay style="width:465px; position:absolute; margin-left:-528px; margin-top:25px">
-          <source src="{% static 'blog/assets/img/BeerhouseDemo.mp4' %}" type="video/mp4">
-          <source src="movie.ogg" type="video/ogg">
-          Your browser does not support the video tag.
-        </video>
-        <img src="{{project.image2.url}}" style="width:80%; margin-top:70px" class="hidden-sm-up">
         {% else %}
         <img src="{{project.image2.url}}" style="width:100%; margin-top:70px">
         {% endif %}
