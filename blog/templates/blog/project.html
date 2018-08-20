@@ -56,8 +56,8 @@
 <div class="block block-bordered-lg">
   <div class="container text-center app-translate-15" data-transition="entrance">
     <div class="row">
-      <div class="col-sm-1"></div>
-      <div class="col-sm-10">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-8">
         <h6 class="text-muted text-uppercase">Our Work</h6>
         <h1>{{project.name}}</h1>
 
@@ -70,7 +70,7 @@
 
 
         <p class="lead mt-5 text-justify">
-          {{project.description1|safe}}
+          {{project.description1|linebreaks}}
         </p>
         {% if project.slug == 'toplist' %}
         <img class="hidden-sm-down" src="{% static 'blog/assets/img/iPhone-5s-mockup.jpg' %}" style="width:375px" >
@@ -93,7 +93,7 @@
       <div class="row app-align-center" style="padding:100px">
         <div class="col-sm-12 text-center">
           <h6 class="text-muted text-uppercase mb-2">About The Project</h6>
-          <h3 class="mb-4">{{project.description2|safe}}</h3>
+          <h3 class="mb-4">{{project.description2|linebreaks}}</h3>
         </div>
       </div>
   </div>
