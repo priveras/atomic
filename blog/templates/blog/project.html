@@ -72,7 +72,16 @@
         <p class="lead mt-5 text-justify">
           {{project.description1|safe}}
         </p>
+        {% if project.slug == 'toplist' %}
+        <img class="hidden-sm-down" src="{% static 'blog/assets/img/iPhone-5s-mockup.jpg' %}" style="width:375px" >
+        <video class="hidden-sm-down" loop autoplay style="width:300px; position:absolute; margin-left:-336px; margin-top:118px">
+          <source src="{% static 'blog/assets/img/movie.mp4' %}" type="video/mp4">
+          <source src="movie.ogg" type="video/ogg">
+          Your browser does not support the video tag.
+        </video>
+        {% else %}
         <img src="{{project.image2.url}}" style="width:100%; margin-top:70px">
+        {% endif %}
       </div> 
     </div>
   </div>
