@@ -68,8 +68,8 @@
         {% else %}
         {% endif %}
 
-        <span class="lead">
-          <p class="lead mb-3 text-justify">{{project.description1|linebreaks}}</p>
+        <span class="lead text-justify">
+          {{project.description1|linebreaks}}
         </span>
         {% if project.slug == 'toplist' %}
         <img class="hidden-sm-down" src="{% static 'blog/assets/img/iPhone-5s-mockup.jpg' %}" style="width:375px" >
