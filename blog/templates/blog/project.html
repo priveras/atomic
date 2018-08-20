@@ -68,10 +68,9 @@
         {% else %}
         {% endif %}
 
-
-        <p class="lead mt-5 text-justify">
-          {{project.description1|linebreaks}}
-        </p>
+        <span class="lead">
+          <p class="lead mb-3 text-justify">{{project.description1|linebreaks}}</p>
+        </span>
         {% if project.slug == 'toplist' %}
         <img class="hidden-sm-down" src="{% static 'blog/assets/img/iPhone-5s-mockup.jpg' %}" style="width:375px" >
         <video class="hidden-sm-down" loop autoplay style="width:300px; position:absolute; margin-left:-336px; margin-top:118px">
