@@ -66,6 +66,7 @@
         {% elif project.excerpt == 'web development' %}
         <h4><i class="fa fa-laptop text-primary" style="margin-right:10px"></i> {{project.excerpt}}</h4>
         {% else %}
+        <h4>{{project.excerpt}}</h4>
         {% endif %}
 
         <div style="margin-top:50px">
@@ -112,7 +113,7 @@
 
       <div class="col-lg-5 col-md-12 text-center text-md-left pb-5" style="margin-top:40px">
         <h6 class="text-muted text-uppercase text-center">Our Work</h6>
-        <h3 class="text-center" style="margin-bottom:50px">More About {{project.name}}</h3>
+        <h3 class="text-center" style="margin-bottom:30px">More About {{project.name}}</h3>
         <p style="font-size:18px" class="text-justify">
           {{project.description3}}
         </p>
