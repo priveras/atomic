@@ -8,18 +8,31 @@ from django.core.mail import send_mail
 from django.core.mail import EmailMultiAlternatives
 from django.template.loader import get_template
 
+class IndexView(generic.TemplateView):
+    template_name = "blog/index2.html"
+
+class AboutView(generic.TemplateView):
+    template_name = "blog/about.html"
+
+class ProjectListView(generic.ListView):
+    template_name = 'blog/work.html'
+    context_object_name = 'projects_list'
+    model = Project
+
+    def get_context_data(self, **kwargs):
+        context = super(ProjectListView, self).get_context_data(**kwargs)
+
+        return context
+
 class WorkDetailView(generic.DetailView):
     model = Project
     template_name = 'blog/project.html'
 
-class IndexView(generic.TemplateView):
-    template_name = "blog/index2.html"
-
 class SoonView(generic.TemplateView):
     template_name = "blog/soon.html"
 
-class AboutView(generic.TemplateView):
-    template_name = "blog/about.html"
+class PlansView(generic.TemplateView):
+    template_name = "blog/plans.html"
 
 class ThanksView(generic.TemplateView):
     template_name = "blog/thanks.html"
@@ -43,16 +56,6 @@ class BlogListView(generic.ListView):
 class BlogPostView(generic.DetailView):
     model = Blog
     template_name = 'blog/blog-post.html'
-
-class ProjectListView(generic.ListView):
-    template_name = 'blog/work.html'
-    context_object_name = 'projects_list'
-    model = Project
-
-    def get_context_data(self, **kwargs):
-        context = super(ProjectListView, self).get_context_data(**kwargs)
-
-        return context
 
 def hire(request):
     if request.method == 'GET':
